@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "theme_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "cover": {
+      "type": "string",
+      "format": "base64"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "theme_id",
+    "cover"
+  ],
+  "additionalProperties": false
+}

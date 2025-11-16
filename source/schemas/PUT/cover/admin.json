@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "cover": {
+      "type": "string",
+      "format": "base64"
+    }
+  },
+  "required": [
+    "cover"
+  ],
+  "additionalProperties": false
+}

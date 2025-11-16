@@ -1,0 +1,19 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "cities": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {}
+        }
+      }
+    }
+  }
+}

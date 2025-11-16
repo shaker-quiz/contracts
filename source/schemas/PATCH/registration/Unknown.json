@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "people_count": {
+      "type": "integer"
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

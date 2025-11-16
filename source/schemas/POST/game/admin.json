@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "location_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "theme_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "number": {
+      "type": "string"
+    },
+    "event_time": {
+      "type": "string",
+      "format": "iso-date-time"
+    }
+  },
+  "required": [
+    "location_id",
+    "theme_id",
+    "number",
+    "event_time"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,34 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "location_id": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "number": {
+        "type": "string"
+      },
+      "event_time": {
+        "type": "string",
+        "format": "iso-date-time"
+      },
+      "price": {
+        "type": "number"
+      },
+      "min_members_count": {
+        "type": "integer"
+      },
+      "max_members_count": {
+        "type": "integer"
+      },
+      "status": {
+        "type": "string"
+      }
+    },
+    "required": [],
+    "additionalProperties": false
+  },
+  "uniqueItems": true
+}

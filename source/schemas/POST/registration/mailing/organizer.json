@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "template": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "template",
+    "text"
+  ],
+  "additionalProperties": false
+}

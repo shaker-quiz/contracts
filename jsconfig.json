@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "allowJs": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "paths": {
+      "source/": [
+        "./source/*"
+      ]
+    }
+  },
+  "include": [
+    "source/**/*"
+  ]
+}

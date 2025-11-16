@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "channel": {
+      "type": "string"
+    },
+    "confirmed_channel": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "vkontakte": {
+      "type": "string"
+    },
+    "telegramBot": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

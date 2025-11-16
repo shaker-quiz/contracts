@@ -1,0 +1,126 @@
+{
+  "type": "object",
+  "properties": {
+    "is_franchise": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "number"
+    },
+    "game_time": {
+      "type": "string",
+      "format": "iso-time"
+    },
+    "vk_link": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tg_link": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "inst_link": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "min_members_count": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "max_members_count": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "custom_script": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "custom_html": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "vk_group_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "chatapp_line": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "chatapp_user": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "chatapp_tag": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "chatapp_category": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "telegram_chat_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "yandex_metrica": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "chatapp_legacy": {
+      "type": [
+        "boolean"
+      ]
+    },
+    "phone": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "email": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "address": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "is_franchise"
+  ],
+  "additionalProperties": false
+}

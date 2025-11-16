@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "alias": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

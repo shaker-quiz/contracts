@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "house_number": {
+      "type": "string"
+    },
+    "people_capacity": {
+      "type": "integer"
+    },
+    "team_capacity": {
+      "type": "integer"
+    },
+    "game_time": {
+      "type": "string",
+      "format": "iso-time"
+    },
+    "city_id": {
+      "type": "string",
+      "format": "uuid"
+    }
+  },
+  "required": [
+    "name",
+    "street",
+    "house_number",
+    "people_capacity",
+    "team_capacity",
+    "game_time",
+    "city_id"
+  ],
+  "additionalProperties": false
+}

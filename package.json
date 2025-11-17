@@ -1,5 +1,23 @@
 {
-  "dependencies": {
+  "type": "module",
+  "name": "@shakerquiz/contracts",
+  "version": "0.0.0",
+  "author": "yurkimus <yurkimus@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaker-quiz/contracts.git"
+  },
+  "scripts": {
+    "prepublishOnly": "deno run -A ./generate.js"
+  },
+  "exports": {
+    ".": {
+      "default": "./source/index.js"
+    },
+    "./contracts/*.json": "./source/contracts/*.json"
+  },
+  "devDependencies": {
     "@shakerquiz/utilities": "0.5.178"
   }
 }

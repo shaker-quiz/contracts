@@ -1,4 +1,4 @@
-import { Method, Methods, Mode, Roles, Routes } from '@shakerquiz/utilities'
+import { Methods, Mode, Roles, Routes } from '@shakerquiz/utilities'
 
 let identifier = (method, route, role) => method + '_' + route.replaceAll('/', '_') + '_' + role
 
@@ -12,7 +12,7 @@ let pathnames = Methods
 Promise
   .all(pathnames.map(({ method, route, role }) =>
     Deno
-      .lstat('./source/schemas/' + method + '/' + route + '/' + role + '.json')
+      .lstat('./source/contracts/' + method + '/' + route + '/' + role + '.json')
       .then(() => ({ method, route, role }))
       .catch(() => null)
   ))
@@ -20,8 +20,6 @@ Promise
     Deno.writeTextFile(
       './source/index.js',
       ''
-        + "import { Method, Methods, Mode, Roles, Routes } from '@shakerquiz/utilities'"
-        + '\n\n'
         + components
           .filter(Boolean)
           .reduce((text, { method, route, role }) =>
@@ -32,13 +30,13 @@ Promise
             + ' '
             + 'from'
             + "'"
-            + './schemas/' + method + '/' + route + '/' + role + '.json'
+            + './contracts/' + method + '/' + route + '/' + role + '.json'
             + "'"
             + ' '
             + "with { type: 'json' }"
             + '\n', '')
         + '\n'
-        + 'const Schema = Object.freeze({'
+        + 'export const Schema = Object.freeze({'
         + '\n'
         + components
           .filter(Boolean)

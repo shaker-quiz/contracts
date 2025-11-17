@@ -12,7 +12,7 @@ let pathnames = Methods
 Promise
   .all(pathnames.map(({ method, route, role }) =>
     Deno
-      .lstat('./source/schemas/' + method + '/' + route + '/' + role + '.json')
+      .lstat('./source/contracts/' + method + '/' + route + '/' + role + '.json')
       .then(() => ({ method, route, role }))
       .catch(() => null)
   ))
@@ -30,7 +30,7 @@ Promise
             + ' '
             + 'from'
             + "'"
-            + './schemas/' + method + '/' + route + '/' + role + '.json'
+            + './contracts/' + method + '/' + route + '/' + role + '.json'
             + "'"
             + ' '
             + "with { type: 'json' }"

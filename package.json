@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "prepublishOnly": "deno run -A ./generate.js"
+  },
   "devDependencies": {
     "@shakerquiz/utilities": "0.5.178"
   }

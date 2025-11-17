@@ -1,4 +1,4 @@
-import { Method, Methods, Mode, Roles, Routes } from '@shakerquiz/utilities'
+import { Methods, Mode, Roles, Routes } from '@shakerquiz/utilities'
 
 let identifier = (method, route, role) => method + '_' + route.replaceAll('/', '_') + '_' + role
 

@@ -1,5 +1,5 @@
 {
-  "dependencies": {
+  "devDependencies": {
     "@shakerquiz/utilities": "0.5.178"
   }
 }

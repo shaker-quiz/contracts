@@ -20,8 +20,6 @@ Promise
     Deno.writeTextFile(
       './source/index.js',
       ''
-        + "import { Method, Methods, Mode, Roles, Routes } from '@shakerquiz/utilities'"
-        + '\n\n'
         + components
           .filter(Boolean)
           .reduce((text, { method, route, role }) =>
@@ -38,7 +36,7 @@ Promise
             + "with { type: 'json' }"
             + '\n', '')
         + '\n'
-        + 'const Schema = Object.freeze({'
+        + 'export const Schema = Object.freeze({'
         + '\n'
         + components
           .filter(Boolean)

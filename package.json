@@ -9,7 +9,7 @@
     "url": "https://github.com/shaker-quiz/contracts.git"
   },
   "scripts": {
-    "prepublishOnly": "deno run -A ./generate.js"
+    "prepublishOnly": "node ./generate.js"
   },
   "exports": {
     ".": {

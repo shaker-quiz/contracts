@@ -19,14 +19,9 @@ jobs:
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          registry-url: 'https://registry.npmjs.org'
+      - run: npm install -g npm@latest
       - run: git config user.name "github-actions[bot]"
       - run: git config user.email "github-actions[bot]@users.noreply.github.com"
-      - name: Update npm
-        run: npm install -g npm@latest
       - run: npm version patch
-      - run: npm ci
       - run: npm publish
       - run: git push --follow-tags

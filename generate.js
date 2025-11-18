@@ -1,4 +1,5 @@
 import { Methods, Mode, Roles, Routes } from '@shakerquiz/utilities'
+import { stat, writeFile } from 'node:fs/promises'
 
 let identifier = (method, route, role) => method + '_' + route.replaceAll('/', '_') + '_' + role
 
@@ -10,14 +11,15 @@ let pathnames = Methods
   .map(([method, route, role]) => ({ method, route, role }))
 
 Promise
-  .all(pathnames.map(({ method, route, role }) =>
-    Deno
-      .lstat('./source/contracts/' + method + '/' + route + '/' + role + '.json')
-      .then(() => ({ method, route, role }))
-      .catch(() => null)
-  ))
+  .all(
+    pathnames.map(({ method, route, role }) =>
+      stat('./source/contracts/' + method + '/' + route + '/' + role + '.json')
+        .then(() => ({ method, route, role }))
+        .catch(() => null)
+    ),
+  )
   .then(components =>
-    Deno.writeTextFile(
+    writeFile(
       './source/index.js',
       ''
         + components

@@ -19,6 +19,7 @@ jobs:
       - uses: actions/setup-node@v6
       - run: git config user.name "github-actions[bot]"
       - run: git config user.email "github-actions[bot]@users.noreply.github.com"
+      - run: npm install -g npm@latest
       - run: npm version patch
       - run: npm ci
       - run: npm publish

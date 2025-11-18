@@ -1,3 +1,5 @@
+name: Publish Package
+
 on:
   pull_request:
     types: [ closed ]
@@ -6,20 +8,22 @@ on:
 
 permissions:
   id-token: write
-  contents: write
+  contents: read
 
 jobs:
-  publish-to-npm:
-    permissions:
-      contents: write
+  publish:
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v6
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
       - run: git config user.name "github-actions[bot]"
       - run: git config user.email "github-actions[bot]@users.noreply.github.com"
-      - run: npm install -g npm@latest
+      - name: Update npm
+        run: npm install -g npm@latest
       - run: npm version patch
       - run: npm ci
       - run: npm publish

@@ -1,17 +1,17 @@
 on:
-  push:
-    tags:
-      - 'v*'
+  release:
+    types: [ published ]
 
 permissions:
   id-token: write
   contents: read
 
 jobs:
-  publish-npm:
+  publish-to-npm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v6
+      - uses: denoland/setup-deno@v2
       - run: npm ci
       - run: npm publish

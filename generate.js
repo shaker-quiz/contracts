@@ -38,7 +38,7 @@ Promise
             + "with { type: 'json' }"
             + '\n', '')
         + '\n'
-        + 'export const Schema = Object.freeze({'
+        + 'export const Contract = Object.freeze({'
         + '\n'
         + components
           .filter(Boolean)

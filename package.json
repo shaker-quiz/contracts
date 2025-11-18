@@ -11,6 +11,9 @@
   "scripts": {
     "prepublishOnly": "node ./generate.js"
   },
+  "files": [
+    "source"
+  ],
   "exports": {
     ".": {
       "default": "./source/index.js"

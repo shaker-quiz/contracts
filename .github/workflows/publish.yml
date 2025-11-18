@@ -4,8 +4,12 @@ on:
     branches:
       - main
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
-  push-tag:
+  publish-to-npm:
     permissions:
       contents: write
     runs-on: ubuntu-latest
@@ -16,4 +20,6 @@ jobs:
       - run: git config user.name "github-actions[bot]"
       - run: git config user.email "github-actions[bot]@users.noreply.github.com"
       - run: npm version patch
+      - run: npm ci
+      - run: npm publish
       - run: git push --tags

@@ -26,16 +26,8 @@ Promise
           .filter(Boolean)
           .reduce((text, { method, route, role }) =>
             text
-            + 'import'
-            + ' '
-            + identifier(method, route, role)
-            + ' '
-            + 'from'
-            + "'"
-            + './contracts/' + method + '/' + route + '/' + role + '.json'
-            + "'"
-            + ' '
-            + "with { type: 'json' }"
+            + 'import ' + identifier(method, route, role) + ' from'
+            + "'./contracts/" + method + '/' + route + '/' + role + ".json' with { type: 'json' }"
             + '\n', '')
         + '\n'
         + 'export const Contract = Object.freeze({'
@@ -45,15 +37,38 @@ Promise
           .reduce((text, { method, route, role }) =>
             text
             + '\t'
-            + "'"
-            + property(method, route, role)
-            + "'"
-            + ':'
-            + ' '
-            + identifier(method, route, role)
+            + "'" + property(method, route, role) + "'"
+            + ': '
+            + "'" + property(method, route, role) + "'"
             + ','
             + '\n', '')
         + '})'
+        + '\n\n'
+        + 'export const inferContract = Object.freeze('
+        + '\n'
+        + "  /** @returns {typeof Contract[keyof typeof Contract] | 'Unknown'} */"
+        + '\n'
+        + "  x => Contract[x] ?? 'Unknown'"
+        + '\n'
+        + ')'
+        + '\n\n'
+        + 'export const ContractSchema = Object.freeze({'
+        + '\n'
+        + components
+          .filter(Boolean)
+          .reduce((text, { method, route, role }) =>
+            text
+            + "  [Contract['" + property(method, route, role) + "']]: " + identifier(method, route, role) + ','
+            + '\n', '')
+        + '})'
+        + '\n\n'
+        + 'export const inferContractSchema = Object.freeze('
+        + '\n  '
+        + "/** @returns {typeof ContractSchema[keyof typeof ContractSchema] | 'Unknown'} */"
+        + '\n  '
+        + "x => ContractSchema[x] ?? 'Unknown'"
+        + '\n'
+        + ')'
         + '\n',
     )
   )

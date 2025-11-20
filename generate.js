@@ -44,6 +44,8 @@ Promise
             + '\n', '')
         + '})'
         + '\n\n'
+        + 'export const Contracts = Object.freeze(Object.values(Contract))'
+        + '\n\n'
         + 'export const inferContract = Object.freeze('
         + '\n'
         + "  /** @returns {typeof Contract[keyof typeof Contract] | 'Unknown'} */"

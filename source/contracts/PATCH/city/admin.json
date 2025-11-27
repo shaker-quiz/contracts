@@ -1,8 +1,12 @@
 {
   "type": "object",
   "properties": {
-    "is_franchise": {
-      "type": "boolean"
+    "affilation": {
+      "type": "string",
+      "enum": [
+        "Franchise",
+        "Branch"
+      ]
     },
     "price": {
       "type": "number"
@@ -95,9 +99,11 @@
         "null"
       ]
     },
-    "chatapp_legacy": {
-      "type": [
-        "boolean"
+    "chatapp_version": {
+      "type": "string",
+      "enum": [
+        "Latest",
+        "Legacy"
       ]
     },
     "phone": {
@@ -119,8 +125,6 @@
       ]
     }
   },
-  "required": [
-    "is_franchise"
-  ],
+  "required": [],
   "additionalProperties": false
 }

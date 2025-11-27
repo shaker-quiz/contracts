@@ -188,8 +188,12 @@
         "ZWL"
       ]
     },
-    "is_franchise": {
-      "type": "boolean"
+    "affilation": {
+      "type": "string",
+      "enum": [
+        "Branch",
+        "Franchise"
+      ]
     },
     "timezone_name": {
       "type": "string",
@@ -689,7 +693,7 @@
     "alias",
     "country",
     "currency_name",
-    "is_franchise",
+    "affilation",
     "timezone_name"
   ],
   "additionalProperties": false

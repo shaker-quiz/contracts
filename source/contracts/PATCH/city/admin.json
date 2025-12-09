@@ -93,6 +93,12 @@
         "null"
       ]
     },
+    "telegram_channel_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
     "yandex_metrica": {
       "type": [
         "string",

@@ -16,8 +16,12 @@
     "team_capacity": {
       "type": "integer"
     },
-    "is_adult": {
-      "type": "boolean"
+    "audience": {
+      "type": "string",
+      "enum": [
+        "Open",
+        "Restricted"
+      ]
     },
     "game_time": {
       "type": "string",

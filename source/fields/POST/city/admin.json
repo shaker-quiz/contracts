@@ -89,7 +89,7 @@
   },
   {
     "name": "phone",
-    "kind": "tel"
+    "kind": "phone"
   },
   {
     "name": "email",

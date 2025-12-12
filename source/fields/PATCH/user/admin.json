@@ -1,18 +1,18 @@
 [
   {
     "name": "first_name",
-    "kind": "input/string"
+    "kind": "string"
   },
   {
     "name": "last_name",
-    "kind": "input/string"
+    "kind": "string"
   },
   {
     "name": "email",
-    "kind": "input/string"
+    "kind": "string"
   },
   {
     "name": "phone",
-    "kind": "input/tel"
+    "kind": "phone"
   }
 ]

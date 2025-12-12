@@ -1,6 +1,6 @@
 [
   {
     "name": "email",
-    "kind": "input/string"
+    "kind": "string"
   }
 ]

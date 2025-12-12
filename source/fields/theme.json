@@ -1,0 +1,11 @@
+[
+  "name",
+  "id",
+  "time_created",
+  "time_updated",
+  "short_description",
+  "image_id",
+  "description",
+  "alias",
+  "status"
+]

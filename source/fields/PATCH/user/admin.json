@@ -1,21 +1,5 @@
 [
   {
-    "name": "role_id",
-    "kind": "input/uuid"
-  },
-  {
-    "name": "id",
-    "kind": "input/uuid"
-  },
-  {
-    "name": "time_created",
-    "kind": "input/datetime"
-  },
-  {
-    "name": "time_updated",
-    "kind": "input/datetime"
-  },
-  {
     "name": "first_name",
     "kind": "input/string"
   },
@@ -28,39 +12,7 @@
     "kind": "input/string"
   },
   {
-    "name": "is_active",
-    "kind": "checkbox"
-  },
-  {
-    "name": "is_superuser",
-    "kind": "checkbox"
-  },
-  {
-    "name": "is_verified",
-    "kind": "checkbox"
-  },
-  {
-    "name": "third_name",
-    "kind": "input/string"
-  },
-  {
     "name": "phone",
     "kind": "input/tel"
-  },
-  {
-    "name": "gmail_link",
-    "kind": "input/url"
-  },
-  {
-    "name": "mailru_link",
-    "kind": "input/url"
-  },
-  {
-    "name": "telegram_id",
-    "kind": "deprecated"
-  },
-  {
-    "name": "telegram_data",
-    "kind": "deprecated"
   }
 ]

@@ -1,0 +1,13 @@
+[
+  "checkbox",
+  "string",
+  "password",
+  "text",
+  "tel",
+  "url",
+  "uuid",
+  "time",
+  "datetime",
+  "autocomplete",
+  "deprecated"
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "name": "number",
+    "kind": "string"
+  },
+  {
+    "name": "status",
+    "kind": "autocomplete"
+  },
+  {
+    "name": "event_time",
+    "kind": "datetime"
+  },
+  {
+    "name": "price",
+    "kind": "number"
+  },
+  {
+    "name": "location_id",
+    "kind": "autocomplete"
+  },
+  {
+    "name": "theme_id",
+    "kind": "autocomplete"
+  },
+  {
+    "name": "short_description",
+    "kind": "text"
+  },
+  {
+    "name": "min_members_count",
+    "kind": "number"
+  },
+  {
+    "name": "max_members_count",
+    "kind": "number"
+  },
+  {
+    "name": "alias",
+    "kind": "string"
+  },
+  {
+    "name": "city_id",
+    "kind": "autocomplete"
+  }
+]

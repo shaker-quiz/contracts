@@ -1,0 +1,20 @@
+[
+  "role_id",
+  "id",
+  "time_created",
+  "time_updated",
+  "first_name",
+  "last_name",
+  "email",
+  "is_active",
+  "is_superuser",
+  "is_verified",
+  "hashed_password",
+  "image_id",
+  "third_name",
+  "phone",
+  "gmail_link",
+  "mailru_link",
+  "telegram_id",
+  "telegram_data"
+]

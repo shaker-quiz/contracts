@@ -1,76 +1,39 @@
 import { Methods, Mode, Roles, Routes } from '@shakerquiz/utilities'
-import { stat, writeFile } from 'node:fs/promises'
+import template from './template.js' with { type: 'text' }
 
-let identifier = (method, route, role) => method + '_' + route.replaceAll('/', '_') + '_' + role
+let key = (method, route, role) => '' + method + '/' + route + '/' + role
 
-let property = (method, route, role) => method + '/' + route + '/' + role
+let value = (method, route, role) => '' + method + '_' + route.replaceAll('/', '_') + '_' + role
 
-let pathnames = Methods
+let pathname = (method, route, role) => `'./contracts/${method}/${route}/${role}.json'`
+
+let Import = (...a) => `import ${value(...a)} from ${pathname(...a)} with { type: 'json' }`
+
+let Contract = (...a) => `  '${key(...a)}': '${key(...a)}'`
+
+let ContractSchema = (...a) => `  '${key(...a)}': ${value(...a)}`
+
+let A = Methods
   .flatMap(method => Routes.map(route => [method, route]))
   .flatMap(([method, route]) => Roles.concat(Mode['Unknown']).map(role => [method, route, role]))
-  .map(([method, route, role]) => ({ method, route, role }))
 
 Promise
   .all(
-    pathnames.map(({ method, route, role }) =>
-      stat('./source/contracts/' + method + '/' + route + '/' + role + '.json')
-        .then(() => ({ method, route, role }))
+    A.map(([method, route, role]) =>
+      Bun
+        .file(`./source/contracts/${method}/${route}/${role}.json`)
+        .stat()
+        .then(() => [method, route, role])
         .catch(() => null)
     ),
   )
+  .then(components => components.filter(Boolean))
   .then(components =>
-    writeFile(
+    Bun.write(
       './source/index.js',
-      ''
-        + components
-          .filter(Boolean)
-          .reduce((text, { method, route, role }) =>
-            text
-            + 'import ' + identifier(method, route, role) + ' from'
-            + "'./contracts/" + method + '/' + route + '/' + role + ".json' with { type: 'json' }"
-            + '\n', '')
-        + '\n'
-        + 'export const Contract = Object.freeze({'
-        + '\n'
-        + components
-          .filter(Boolean)
-          .reduce((text, { method, route, role }) =>
-            text
-            + '\t'
-            + "'" + property(method, route, role) + "'"
-            + ': '
-            + "'" + property(method, route, role) + "'"
-            + ','
-            + '\n', '')
-        + '})'
-        + '\n\n'
-        + 'export const Contracts = Object.freeze(Object.values(Contract))'
-        + '\n\n'
-        + 'export const inferContract = Object.freeze('
-        + '\n'
-        + "  /** @returns {typeof Contract[keyof typeof Contract] | 'Unknown'} */"
-        + '\n'
-        + "  x => Contract[x] ?? 'Unknown'"
-        + '\n'
-        + ')'
-        + '\n\n'
-        + 'export const ContractSchema = Object.freeze({'
-        + '\n'
-        + components
-          .filter(Boolean)
-          .reduce((text, { method, route, role }) =>
-            text
-            + "  [Contract['" + property(method, route, role) + "']]: " + identifier(method, route, role) + ','
-            + '\n', '')
-        + '})'
-        + '\n\n'
-        + 'export const inferContractSchema = Object.freeze('
-        + '\n  '
-        + "/** @returns {typeof ContractSchema[keyof typeof ContractSchema] | 'Unknown'} */"
-        + '\n  '
-        + "x => ContractSchema[x] ?? 'Unknown'"
-        + '\n'
-        + ')'
-        + '\n',
+      template
+        .replace('/* imports */', components.map(a => Import(...a)).join('\n'))
+        .replace('/* contracts */', components.map(a => Contract(...a)).join(', '))
+        .replace('/* schemas */', components.map(a => ContractSchema(...a)).join(', ')),
     )
   )

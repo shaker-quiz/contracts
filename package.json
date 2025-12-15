@@ -17,8 +17,7 @@
   "exports": {
     ".": {
       "default": "./source/index.js"
-    },
-    "./contracts/*.json": "./source/contracts/*.json"
+    }
   },
   "devDependencies": {
     "@shakerquiz/utilities": "0.5.178"

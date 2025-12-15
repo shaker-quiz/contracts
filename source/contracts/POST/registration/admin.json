@@ -50,21 +50,6 @@
     "telegramBot": {
       "type": "string"
     },
-    "utm_campaign": {
-      "type": "string"
-    },
-    "utm_content": {
-      "type": "string"
-    },
-    "utm_medium": {
-      "type": "string"
-    },
-    "utm_source": {
-      "type": "string"
-    },
-    "utm_term": {
-      "type": "string"
-    },
     "vkontakte": {
       "type": "string"
     }

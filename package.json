@@ -14,13 +14,8 @@
   "files": [
     "source"
   ],
-  "exports": {
-    ".": {
-      "default": "./source/index.js"
-    },
-    "./contracts/*.json": "./source/contracts/*.json"
-  },
+  "exports": "./source/index.js",
   "devDependencies": {
-    "@shakerquiz/utilities": "0.5.178"
+    "@shakerquiz/utilities": "0.5.219"
   }
 }

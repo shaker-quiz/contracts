@@ -10,7 +10,7 @@
       "format": "uuid"
     },
     "number": {
-      "type": "string"
+      "type": "number"
     },
     "event_time": {
       "type": "string",

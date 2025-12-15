@@ -4,7 +4,7 @@
     "name": {
       "type": "string"
     },
-    "short_description": {
+    "subtitle": {
       "type": "string"
     },
     "description": {
@@ -16,7 +16,7 @@
   },
   "required": [
     "name",
-    "short_description",
+    "subtitle",
     "description",
     "alias"
   ],

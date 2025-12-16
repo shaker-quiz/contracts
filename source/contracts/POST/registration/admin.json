@@ -7,9 +7,6 @@
     "channel": {
       "type": "string"
     },
-    "confirmed_channel": {
-      "type": "string"
-    },
     "comment": {
       "type": "string"
     },
@@ -46,12 +43,6 @@
     },
     "team_name": {
       "type": "string"
-    },
-    "telegramBot": {
-      "type": "string"
-    },
-    "vkontakte": {
-      "type": "string"
     }
   },
   "required": [
@@ -66,45 +57,5 @@
     "channel",
     "email"
   ],
-  "additionalProperties": false,
-  "allOf": [
-    {
-      "if": {
-        "properties": {
-          "channel": {
-            "const": "telegramBot"
-          }
-        },
-        "required": [
-          "channel"
-        ]
-      },
-      "then": {
-        "required": [
-          "channel",
-          "confirmed_channel",
-          "telegramBot"
-        ]
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "channel": {
-            "const": "vkontakte"
-          }
-        },
-        "required": [
-          "channel"
-        ]
-      },
-      "then": {
-        "required": [
-          "channel",
-          "confirmed_channel",
-          "vkontakte"
-        ]
-      }
-    }
-  ]
+  "additionalProperties": false
 }

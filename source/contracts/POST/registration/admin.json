@@ -43,6 +43,9 @@
     },
     "team_name": {
       "type": "string"
+    },
+    "note": {
+      "type": "string"
     }
   },
   "required": [

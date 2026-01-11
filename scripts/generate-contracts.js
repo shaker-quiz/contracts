@@ -1,5 +1,5 @@
 import { Methods, Mode, Roles, Routes } from '@shakerquiz/utilities'
-import template from './template.js' with { type: 'text' }
+import template from './assets/contracts-template.js' with { type: 'text' }
 
 let key = (method, route, role) => '' + method + '/' + route + '/' + role
 
@@ -21,7 +21,7 @@ Promise
   .all(
     A.map(([method, route, role]) =>
       Bun
-        .file(`./source/contracts/${method}/${route}/${role}.json`)
+        .file(`source/contracts/${method}/${route}/${role}.json`)
         .stat()
         .then(() => [method, route, role])
         .catch(() => null)
@@ -30,7 +30,7 @@ Promise
   .then(components => components.filter(Boolean))
   .then(components =>
     Bun.write(
-      './source/index.js',
+      'source/index.js',
       template
         .replace('/* imports */', components.map(a => Import(...a)).join('\n'))
         .replace('/* contracts */', components.map(a => Contract(...a)).join(', '))

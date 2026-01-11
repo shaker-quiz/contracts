@@ -16,6 +16,6 @@
   ],
   "exports": "./source/index.js",
   "devDependencies": {
-    "@shakerquiz/utilities": "0.5.219"
+    "@shakerquiz/utilities": "0.6.6"
   }
 }

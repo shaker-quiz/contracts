@@ -4,14 +4,21 @@
     "name": {
       "type": "string"
     },
-    "short_description": {
+    "alias": {
       "type": "string"
+    },
+    "subtitle": {
+      "type": ["string", "null"]
     },
     "description": {
       "type": "string"
     },
-    "alias": {
-      "type": "string"
+    "status": {
+      "type": "string",
+      "enum": [
+        "Active",
+        "Archive"
+      ]
     }
   },
   "required": [],

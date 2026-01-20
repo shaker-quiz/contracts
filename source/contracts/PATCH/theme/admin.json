@@ -8,7 +8,10 @@
       "type": "string"
     },
     "subtitle": {
-      "type": ["string", "null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "description": {
       "type": "string"
@@ -21,6 +24,10 @@
       ]
     }
   },
-  "required": [],
+  "required": [
+    "name",
+    "alias",
+    "description"
+  ],
   "additionalProperties": false
 }

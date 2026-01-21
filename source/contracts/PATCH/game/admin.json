@@ -1,10 +1,6 @@
 {
   "type": "object",
   "properties": {
-    "location_id": {
-      "type": "string",
-      "format": "uuid"
-    },
     "number": {
       "type": "string"
     },

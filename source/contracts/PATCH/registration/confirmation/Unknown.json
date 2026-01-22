@@ -1,12 +1,5 @@
 {
   "type": "object",
-  "properties": {
-    "is_confirm": {
-      "type": "boolean"
-    }
-  },
-  "required": [
-    "is_confirm"
-  ],
+  "properties": {},
   "additionalProperties": false
 }

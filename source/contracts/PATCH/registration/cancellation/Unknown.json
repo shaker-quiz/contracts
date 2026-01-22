@@ -1,12 +1,5 @@
 {
   "type": "object",
-  "properties": {
-    "is_canceled": {
-      "type": "boolean"
-    }
-  },
-  "required": [
-    "is_canceled"
-  ],
+  "properties": {},
   "additionalProperties": false
 }

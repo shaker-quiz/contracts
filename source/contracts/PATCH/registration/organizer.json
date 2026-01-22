@@ -10,12 +10,6 @@
     "is_alone": {
       "type": "boolean"
     },
-    "is_canceled": {
-      "type": "boolean"
-    },
-    "is_confirm": {
-      "type": "boolean"
-    },
     "is_reserve": {
       "type": "boolean"
     },

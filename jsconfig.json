@@ -1,18 +1,15 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "NodeNext",
-    "moduleResolution": "nodenext",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "allowJs": true,
-    "emitDeclarationOnly": true,
-    "declaration": true,
+    "checkJs": true,
     "paths": {
       "source/": [
         "./source/*"
       ]
     }
-  },
-  "include": [
-    "source/**/*"
-  ]
+  }
 }

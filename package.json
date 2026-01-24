@@ -9,13 +9,14 @@
     "url": "https://github.com/shaker-quiz/contracts.git"
   },
   "scripts": {
-    "prepublishOnly": "bun ./scripts/generate-contracts.js"
+    "prepublishOnly": "bun ./scripts/codegen.js"
   },
   "files": [
     "source"
   ],
   "exports": "./source/index.js",
   "devDependencies": {
-    "@shakerquiz/utilities": "0.6.6"
+    "@shakerquiz/utilities": "0.6.6",
+    "@types/bun": "^1.3.6"
   }
 }

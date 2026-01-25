@@ -1,8 +1,12 @@
 {
-  "types": "array",
+  "type": "array",
   "items": {
     "type": "object",
     "properties": {
+      "id": {
+        "type": "string",
+        "format": "uuid"
+      },
       "location_id": {
         "type": "string",
         "format": "uuid"
@@ -27,7 +31,9 @@
         "type": "string"
       }
     },
-    "required": [],
+    "required": [
+      "id"
+    ],
     "additionalProperties": false
   },
   "uniqueItems": true

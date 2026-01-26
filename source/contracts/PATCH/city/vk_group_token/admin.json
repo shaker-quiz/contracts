@@ -1,12 +1,20 @@
 {
   "type": "object",
   "properties": {
-    "value": {
-      "type": "string"
+    "vk_group_token": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
     }
   },
   "required": [
-    "value"
+    "vk_group_token"
   ],
   "additionalProperties": false
 }

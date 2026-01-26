@@ -1,13 +1,21 @@
 {
   "type": "object",
   "properties": {
-    "id": {
-      "type": "string",
-      "format": "uuid"
+    "role": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": [
+        "id"
+      ]
     }
   },
   "required": [
-    "id"
+    "role"
   ],
   "additionalProperties": false
 }

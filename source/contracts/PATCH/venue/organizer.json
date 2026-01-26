@@ -20,7 +20,7 @@
       "type": "string",
       "enum": [
         "Open",
-        "Restricted"
+        "Adults"
       ]
     },
     "game_time": {
@@ -34,7 +34,11 @@
       ]
     },
     "status": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "Active",
+        "Archive"
+      ]
     },
     "href": {
       "type": [
@@ -43,6 +47,5 @@
       ]
     }
   },
-  "required": [],
   "additionalProperties": false
 }

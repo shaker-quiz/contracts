@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "mailing": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

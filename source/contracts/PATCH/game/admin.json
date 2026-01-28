@@ -16,9 +16,6 @@
     },
     "max_members_count": {
       "type": "integer"
-    },
-    "status": {
-      "type": "string"
     }
   },
   "required": [],

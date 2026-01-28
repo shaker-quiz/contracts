@@ -2,18 +2,24 @@
   "type": "object",
   "properties": {
     "status": {
-      "type": "string",
-      "enum": [
-        "APPROVED",
-        "ARCHIVE",
-        "CLOSED",
-        "FINISHED",
-        "FORINVITES",
-        "IS_RESERVE",
-        "MODERATION",
-        "PUBLISHED",
-        "REJECTED"
-      ]
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string",
+          "enum": [
+            "APPROVED",
+            "ARCHIVE",
+            "CLOSED",
+            "FINISHED",
+            "FORINVITES",
+            "IS_RESERVE",
+            "MODERATION",
+            "PUBLISHED",
+            "REJECTED"
+          ]
+        }
+      },
+      "required": []
     }
   },
   "required": [],

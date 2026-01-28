@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "Created",
+        "Confirmed",
+        "Cancelled"
+      ]
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

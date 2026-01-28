@@ -1,32 +1,21 @@
 {
   "type": "object",
   "properties": {
-    "people_count": {
-      "type": "integer"
+    "team_name": {
+      "type": "string"
     },
     "human_name": {
       "type": "string"
     },
-    "is_alone": {
-      "type": "boolean"
+    "people_count": {
+      "type": "integer"
     },
-    "team_name": {
+    "phone": {
       "type": "string"
     },
-    "status": {
+    "email": {
       "type": "string",
-      "enum": [
-        "Created",
-        "Confirmed",
-        "Cancelled"
-      ]
-    },
-    "lineup": {
-      "type": "string",
-      "enum": [
-        "Main",
-        "Reserve"
-      ]
+      "format": "email"
     }
   },
   "required": [],

@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "lineup": {
+      "type": "string",
+      "enum": [
+        "Main",
+        "Reserve"
+      ]
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

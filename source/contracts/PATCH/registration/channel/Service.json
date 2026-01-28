@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "channel": {
+      "type": "string"
+    },
+    "confirmed_channel": {
+      "type": "string"
+    },
+    "telegramBot": {
+      "type": "string"
+    },
+    "chatapp_id": {
+      "type": "string"
+    },
+  },
+  "required": [],
+  "additionalProperties": false
+}

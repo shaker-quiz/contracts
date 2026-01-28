@@ -24,10 +24,6 @@
       ]
     }
   },
-  "required": [
-    "name",
-    "alias",
-    "description"
-  ],
+  "required": [],
   "additionalProperties": false
 }

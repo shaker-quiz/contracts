@@ -31,7 +31,7 @@ jobs:
 
       - name: "@shakerquiz/utilities"
         if: ${{ inputs.utilities }}
-        run: npm i @shakerquiz/utilities@aquamarine --save-exact --prefer-online
+        run: npm i @shakerquiz/utilities@aquamarine --save-exact --prefer-online --save-dev
 
       - name: Commit changes
         run: |

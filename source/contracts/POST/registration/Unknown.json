@@ -92,6 +92,9 @@
           },
           "telegramBot": {
             "type": "string"
+          },
+          "email": {
+            "type": "string"
           }
         }
       },
@@ -112,6 +115,9 @@
             "type": "string"
           },
           "vkontakte": {
+            "type": "string"
+          },
+          "email": {
             "type": "string"
           }
         }

@@ -4,12 +4,6 @@
     "ads_from": {
       "type": "string"
     },
-    "channel": {
-      "type": "string"
-    },
-    "confirmed_channel": {
-      "type": "string"
-    },
     "email": {
       "type": "string"
     },
@@ -29,6 +23,18 @@
     "human_name": {
       "type": "string"
     },
+    "team_name": {
+      "type": "string"
+    },
+    "people_count": {
+      "type": "integer"
+    },
+    "channel": {
+      "type": "string"
+    },
+    "confirmed_channel": {
+      "type": "string"
+    },
     "is_alone": {
       "type": "boolean"
     },
@@ -41,16 +47,10 @@
     "is_first": {
       "type": "boolean"
     },
-    "people_count": {
-      "type": "integer"
-    },
     "phone": {
       "type": "string"
     },
     "promocode": {
-      "type": "string"
-    },
-    "team_name": {
       "type": "string"
     },
     "utm_campaign": {
@@ -72,28 +72,50 @@
   "required": [
     "event_id",
     "human_name",
+    "team_name",
+    "people_count",
+    "channel",
     "is_alone",
     "is_birthday",
     "is_extensible",
-    "is_first",
-    "people_count",
-    "team_name",
-    "channel"
+    "is_first"
   ],
   "allOf": [
     {
       "if": {
         "properties": {
+          "event_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "human_name": {
+            "type": "string"
+          },
+          "team_name": {
+            "type": "string"
+          },
+          "people_count": {
+            "type": "integer"
+          },
           "channel": {
             "const": "telegramBot"
           },
           "confirmed_channel": {
-            "type": "string"
+            "const": "telegramBot"
+          },
+          "is_alone": {
+            "type": "boolean"
+          },
+          "is_birthday": {
+            "type": "boolean"
+          },
+          "is_extensible": {
+            "type": "boolean"
+          },
+          "is_first": {
+            "type": "boolean"
           },
           "telegramBot": {
-            "type": "string"
-          },
-          "email": {
             "type": "string"
           }
         }
@@ -108,16 +130,38 @@
     {
       "if": {
         "properties": {
+          "event_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "human_name": {
+            "type": "string"
+          },
+          "team_name": {
+            "type": "string"
+          },
+          "people_count": {
+            "type": "integer"
+          },
           "channel": {
             "const": "vkontakte"
           },
           "confirmed_channel": {
-            "type": "string"
+            "const": "vkontakte"
+          },
+          "is_alone": {
+            "type": "boolean"
+          },
+          "is_birthday": {
+            "type": "boolean"
+          },
+          "is_extensible": {
+            "type": "boolean"
+          },
+          "is_first": {
+            "type": "boolean"
           },
           "vkontakte": {
-            "type": "string"
-          },
-          "email": {
             "type": "string"
           }
         }
@@ -132,8 +176,33 @@
     {
       "if": {
         "properties": {
+          "event_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "human_name": {
+            "type": "string"
+          },
+          "team_name": {
+            "type": "string"
+          },
+          "people_count": {
+            "type": "integer"
+          },
           "channel": {
             "const": "email"
+          },
+          "is_alone": {
+            "type": "boolean"
+          },
+          "is_birthday": {
+            "type": "boolean"
+          },
+          "is_extensible": {
+            "type": "boolean"
+          },
+          "is_first": {
+            "type": "boolean"
           },
           "email": {
             "type": "string"

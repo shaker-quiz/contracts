@@ -10,10 +10,16 @@
     "confirmed_channel": {
       "type": "string"
     },
-    "comment": {
+    "email": {
       "type": "string"
     },
-    "email": {
+    "vkontakte": {
+      "type": "string"
+    },
+    "telegramBot": {
+      "type": "string"
+    },
+    "comment": {
       "type": "string"
     },
     "event_id": {
@@ -47,9 +53,6 @@
     "team_name": {
       "type": "string"
     },
-    "telegramBot": {
-      "type": "string"
-    },
     "utm_campaign": {
       "type": "string"
     },
@@ -63,9 +66,6 @@
       "type": "string"
     },
     "utm_term": {
-      "type": "string"
-    },
-    "vkontakte": {
       "type": "string"
     }
   },
@@ -86,6 +86,12 @@
         "properties": {
           "channel": {
             "const": "telegramBot"
+          },
+          "confirmed_channel": {
+            "type": "string"
+          },
+          "telegramBot": {
+            "type": "string"
           }
         }
       },
@@ -101,6 +107,12 @@
         "properties": {
           "channel": {
             "const": "vkontakte"
+          },
+          "confirmed_channel": {
+            "type": "string"
+          },
+          "vkontakte": {
+            "type": "string"
           }
         }
       },
@@ -116,6 +128,9 @@
         "properties": {
           "channel": {
             "const": "email"
+          },
+          "email": {
+            "type": "string"
           }
         }
       },

@@ -115,6 +115,12 @@
           "is_first": {
             "type": "boolean"
           },
+          "email": {
+            "type": "string"
+          },
+          "vkontakte": {
+            "type": "string"
+          },
           "telegramBot": {
             "type": "string"
           }
@@ -161,7 +167,13 @@
           "is_first": {
             "type": "boolean"
           },
+          "email": {
+            "type": "string"
+          },
           "vkontakte": {
+            "type": "string"
+          },
+          "telegramBot": {
             "type": "string"
           }
         }
@@ -205,6 +217,12 @@
             "type": "boolean"
           },
           "email": {
+            "type": "string"
+          },
+          "vkontakte": {
+            "type": "string"
+          },
+          "telegramBot": {
             "type": "string"
           }
         }

@@ -81,6 +81,7 @@
     "channel",
     "email"
   ],
+  "additionalProperties": false,
   "allOf": [
     {
       "if": {
@@ -133,7 +134,6 @@
       },
       "then": {
         "required": [
-          "event_id",
           "channel",
           "confirmed_channel"
         ]

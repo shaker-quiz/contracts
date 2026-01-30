@@ -1,85 +1,5 @@
 {
   "type": "object",
-  "properties": {
-    "ads_from": {
-      "type": "string"
-    },
-    "email": {
-      "type": "string"
-    },
-    "vkontakte": {
-      "type": "string"
-    },
-    "telegramBot": {
-      "type": "string"
-    },
-    "comment": {
-      "type": "string"
-    },
-    "event_id": {
-      "type": "string",
-      "format": "uuid"
-    },
-    "human_name": {
-      "type": "string"
-    },
-    "team_name": {
-      "type": "string"
-    },
-    "people_count": {
-      "type": "integer"
-    },
-    "channel": {
-      "type": "string"
-    },
-    "confirmed_channel": {
-      "type": "string"
-    },
-    "is_alone": {
-      "type": "boolean"
-    },
-    "is_birthday": {
-      "type": "boolean"
-    },
-    "is_extensible": {
-      "type": "boolean"
-    },
-    "is_first": {
-      "type": "boolean"
-    },
-    "phone": {
-      "type": "string"
-    },
-    "promocode": {
-      "type": "string"
-    },
-    "utm_campaign": {
-      "type": "string"
-    },
-    "utm_content": {
-      "type": "string"
-    },
-    "utm_medium": {
-      "type": "string"
-    },
-    "utm_source": {
-      "type": "string"
-    },
-    "utm_term": {
-      "type": "string"
-    }
-  },
-  "required": [
-    "event_id",
-    "human_name",
-    "team_name",
-    "people_count",
-    "channel",
-    "is_alone",
-    "is_birthday",
-    "is_extensible",
-    "is_first"
-  ],
   "anyOf": [
     {
       "if": {
@@ -103,6 +23,15 @@
           "confirmed_channel": {
             "const": "telegramBot"
           },
+          "email": {
+            "type": "string"
+          },
+          "vkontakte": {
+            "type": "string"
+          },
+          "telegramBot": {
+            "type": "string"
+          },
           "is_alone": {
             "type": "boolean"
           },
@@ -115,21 +44,48 @@
           "is_first": {
             "type": "boolean"
           },
-          "email": {
+          "ads_from": {
             "type": "string"
           },
-          "vkontakte": {
+          "comment": {
             "type": "string"
           },
-          "telegramBot": {
+          "phone": {
+            "type": "string"
+          },
+          "promocode": {
+            "type": "string"
+          },
+          "utm_campaign": {
+            "type": "string"
+          },
+          "utm_content": {
+            "type": "string"
+          },
+          "utm_medium": {
+            "type": "string"
+          },
+          "utm_source": {
+            "type": "string"
+          },
+          "utm_term": {
             "type": "string"
           }
         }
       },
       "then": {
         "required": [
+          "event_id",
+          "human_name",
+          "team_name",
+          "people_count",
+          "channel",
           "confirmed_channel",
-          "telegramBot"
+          "telegramBot",
+          "is_alone",
+          "is_birthday",
+          "is_extensible",
+          "is_first"
         ]
       }
     },
@@ -155,6 +111,15 @@
           "confirmed_channel": {
             "const": "vkontakte"
           },
+          "email": {
+            "type": "string"
+          },
+          "vkontakte": {
+            "type": "string"
+          },
+          "telegramBot": {
+            "type": "string"
+          },
           "is_alone": {
             "type": "boolean"
           },
@@ -167,21 +132,48 @@
           "is_first": {
             "type": "boolean"
           },
-          "email": {
+          "ads_from": {
             "type": "string"
           },
-          "vkontakte": {
+          "comment": {
             "type": "string"
           },
-          "telegramBot": {
+          "phone": {
+            "type": "string"
+          },
+          "promocode": {
+            "type": "string"
+          },
+          "utm_campaign": {
+            "type": "string"
+          },
+          "utm_content": {
+            "type": "string"
+          },
+          "utm_medium": {
+            "type": "string"
+          },
+          "utm_source": {
+            "type": "string"
+          },
+          "utm_term": {
             "type": "string"
           }
         }
       },
       "then": {
         "required": [
+          "event_id",
+          "human_name",
+          "team_name",
+          "people_count",
+          "channel",
           "confirmed_channel",
-          "vkontakte"
+          "vkontakte",
+          "is_alone",
+          "is_birthday",
+          "is_extensible",
+          "is_first"
         ]
       }
     },
@@ -204,6 +196,18 @@
           "channel": {
             "const": "email"
           },
+          "confirmed_channel": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "vkontakte": {
+            "type": "string"
+          },
+          "telegramBot": {
+            "type": "string"
+          },
           "is_alone": {
             "type": "boolean"
           },
@@ -216,20 +220,47 @@
           "is_first": {
             "type": "boolean"
           },
-          "email": {
+          "ads_from": {
             "type": "string"
           },
-          "vkontakte": {
+          "comment": {
             "type": "string"
           },
-          "telegramBot": {
+          "phone": {
+            "type": "string"
+          },
+          "promocode": {
+            "type": "string"
+          },
+          "utm_campaign": {
+            "type": "string"
+          },
+          "utm_content": {
+            "type": "string"
+          },
+          "utm_medium": {
+            "type": "string"
+          },
+          "utm_source": {
+            "type": "string"
+          },
+          "utm_term": {
             "type": "string"
           }
         }
       },
       "then": {
         "required": [
-          "email"
+          "event_id",
+          "human_name",
+          "team_name",
+          "people_count",
+          "channel",
+          "email",
+          "is_alone",
+          "is_birthday",
+          "is_extensible",
+          "is_first"
         ]
       }
     }

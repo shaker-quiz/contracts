@@ -80,7 +80,7 @@
     "is_extensible",
     "is_first"
   ],
-  "oneOf": [
+  "anyOf": [
     {
       "if": {
         "properties": {

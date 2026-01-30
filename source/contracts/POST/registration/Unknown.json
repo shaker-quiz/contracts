@@ -78,8 +78,7 @@
     "is_first",
     "people_count",
     "team_name",
-    "channel",
-    "email"
+    "channel"
   ],
   "allOf": [
     {
@@ -92,7 +91,6 @@
       },
       "then": {
         "required": [
-          "channel",
           "confirmed_channel",
           "telegramBot"
         ]
@@ -108,7 +106,6 @@
       },
       "then": {
         "required": [
-          "channel",
           "confirmed_channel",
           "vkontakte"
         ]
@@ -124,7 +121,6 @@
       },
       "then": {
         "required": [
-          "channel",
           "email"
         ]
       }

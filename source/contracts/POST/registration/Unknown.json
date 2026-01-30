@@ -197,7 +197,7 @@
             "const": "email"
           },
           "confirmed_channel": {
-            "type": "string"
+            "type": "null"
           },
           "email": {
             "type": "string"

@@ -135,7 +135,7 @@
       "then": {
         "required": [
           "channel",
-          "confirmed_channel"
+          "email"
         ]
       }
     }

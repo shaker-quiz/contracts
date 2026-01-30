@@ -82,7 +82,7 @@
     "email"
   ],
   "additionalProperties": false,
-  "allOf": [
+  "oneOf": [
     {
       "if": {
         "properties": {

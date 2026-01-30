@@ -119,6 +119,25 @@
           "vkontakte"
         ]
       }
+    },
+    {
+      "if": {
+        "properties": {
+          "channel": {
+            "const": "email"
+          }
+        },
+        "required": [
+          "channel"
+        ]
+      },
+      "then": {
+        "required": [
+          "event_id",
+          "channel",
+          "confirmed_channel"
+        ]
+      }
     }
   ]
 }

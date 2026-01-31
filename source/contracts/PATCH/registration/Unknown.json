@@ -3,8 +3,45 @@
   "properties": {
     "people_count": {
       "type": "integer"
+    },
+     "is_birthday": {
+      "type": "boolean"
+    },
+    "is_extensible": {
+      "type": "boolean"
+    },
+    "is_first": {
+      "type": "boolean"
+    },
+    "celebrant": {
+      "type": "string"
+    },
+     "comment": {
+      "type": "string"
     }
   },
   "required": [],
-  "additionalProperties": false
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "is_birthday": {
+            "const": true
+          }
+        },
+        "required": [
+          "is_birthday"
+        ]
+      },
+      "then": {
+        "required": [
+          "celebrant"
+        ]
+      }
+    }
+  ]
 }
+
+
+

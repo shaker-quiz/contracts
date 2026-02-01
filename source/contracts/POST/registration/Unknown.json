@@ -1,268 +1,121 @@
 {
   "type": "object",
-  "anyOf": [
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "human_name": {
+      "type": "string"
+    },
+    "team_name": {
+      "type": "string"
+    },
+    "people_count": {
+      "type": "integer"
+    },
+    "channel": {
+      "type": "vkontakte"
+    },
+    "confirmed_channel": {
+      "type": "vkontakte"
+    },
+    "email": {
+      "type": "string"
+    },
+    "vkontakte": {
+      "type": "string"
+    },
+    "telegramBot": {
+      "type": "string"
+    },
+    "is_alone": {
+      "type": "boolean"
+    },
+    "is_birthday": {
+      "type": "boolean"
+    },
+    "is_extensible": {
+      "type": "boolean"
+    },
+    "is_first": {
+      "type": "boolean"
+    },
+    "ads_from": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "promocode": {
+      "type": "string"
+    },
+    "utm_campaign": {
+      "type": "string"
+    },
+    "utm_content": {
+      "type": "string"
+    },
+    "utm_medium": {
+      "type": "string"
+    },
+    "utm_source": {
+      "type": "string"
+    },
+    "utm_term": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "event_id",
+    "human_name",
+    "team_name",
+    "people_count",
+    "channel",
+    "is_alone",
+    "is_birthday",
+    "is_extensible",
+    "is_first"
+  ],
+  "additionalProperties": true,
+  "oneOf": [
     {
-      "if": {
-        "properties": {
-          "event_id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "human_name": {
-            "type": "string"
-          },
-          "team_name": {
-            "type": "string"
-          },
-          "people_count": {
-            "type": "integer"
-          },
-          "channel": {
-            "const": "vkontakte"
-          },
-          "confirmed_channel": {
-            "const": "vkontakte"
-          },
-          "email": {
-            "type": "string"
-          },
-          "vkontakte": {
-            "type": "string"
-          },
-          "telegramBot": {
-            "type": "string"
-          },
-          "is_alone": {
-            "type": "boolean"
-          },
-          "is_birthday": {
-            "type": "boolean"
-          },
-          "is_extensible": {
-            "type": "boolean"
-          },
-          "is_first": {
-            "type": "boolean"
-          },
-          "ads_from": {
-            "type": "string"
-          },
-          "comment": {
-            "type": "string"
-          },
-          "phone": {
-            "type": "string"
-          },
-          "promocode": {
-            "type": "string"
-          },
-          "utm_campaign": {
-            "type": "string"
-          },
-          "utm_content": {
-            "type": "string"
-          },
-          "utm_medium": {
-            "type": "string"
-          },
-          "utm_source": {
-            "type": "string"
-          },
-          "utm_term": {
-            "type": "string"
-          }
+      "properties": {
+        "channel": {
+          "const": "vkontakte"
         }
       },
-      "then": {
-        "required": [
-          "event_id",
-          "human_name",
-          "team_name",
-          "people_count",
-          "channel",
-          "confirmed_channel",
-          "vkontakte",
-          "is_alone",
-          "is_birthday",
-          "is_extensible",
-          "is_first"
-        ]
-      }
+      "required": [
+        "channel",
+        "confirmed_channel",
+        "vkontakte"
+      ]
     },
     {
-      "if": {
-        "properties": {
-          "event_id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "human_name": {
-            "type": "string"
-          },
-          "team_name": {
-            "type": "string"
-          },
-          "people_count": {
-            "type": "integer"
-          },
-          "channel": {
-            "const": "telegramBot"
-          },
-          "confirmed_channel": {
-            "const": "telegramBot"
-          },
-          "email": {
-            "type": "string"
-          },
-          "vkontakte": {
-            "type": "string"
-          },
-          "telegramBot": {
-            "type": "string"
-          },
-          "is_alone": {
-            "type": "boolean"
-          },
-          "is_birthday": {
-            "type": "boolean"
-          },
-          "is_extensible": {
-            "type": "boolean"
-          },
-          "is_first": {
-            "type": "boolean"
-          },
-          "ads_from": {
-            "type": "string"
-          },
-          "comment": {
-            "type": "string"
-          },
-          "phone": {
-            "type": "string"
-          },
-          "promocode": {
-            "type": "string"
-          },
-          "utm_campaign": {
-            "type": "string"
-          },
-          "utm_content": {
-            "type": "string"
-          },
-          "utm_medium": {
-            "type": "string"
-          },
-          "utm_source": {
-            "type": "string"
-          },
-          "utm_term": {
-            "type": "string"
-          }
+      "properties": {
+        "channel": {
+          "const": "telegramBot"
         }
       },
-      "then": {
-        "required": [
-          "event_id",
-          "human_name",
-          "team_name",
-          "people_count",
-          "channel",
-          "confirmed_channel",
-          "telegramBot",
-          "is_alone",
-          "is_birthday",
-          "is_extensible",
-          "is_first"
-        ]
-      }
+      "required": [
+        "channel",
+        "confirmed_channel",
+        "telegramBot"
+      ]
     },
     {
-      "if": {
-        "properties": {
-          "event_id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "human_name": {
-            "type": "string"
-          },
-          "team_name": {
-            "type": "string"
-          },
-          "people_count": {
-            "type": "integer"
-          },
-          "channel": {
-            "const": "email"
-          },
-          "confirmed_channel": {
-            "type": "null"
-          },
-          "email": {
-            "type": "string"
-          },
-          "vkontakte": {
-            "type": "string"
-          },
-          "telegramBot": {
-            "type": "string"
-          },
-          "is_alone": {
-            "type": "boolean"
-          },
-          "is_birthday": {
-            "type": "boolean"
-          },
-          "is_extensible": {
-            "type": "boolean"
-          },
-          "is_first": {
-            "type": "boolean"
-          },
-          "ads_from": {
-            "type": "string"
-          },
-          "comment": {
-            "type": "string"
-          },
-          "phone": {
-            "type": "string"
-          },
-          "promocode": {
-            "type": "string"
-          },
-          "utm_campaign": {
-            "type": "string"
-          },
-          "utm_content": {
-            "type": "string"
-          },
-          "utm_medium": {
-            "type": "string"
-          },
-          "utm_source": {
-            "type": "string"
-          },
-          "utm_term": {
-            "type": "string"
-          }
+      "properties": {
+        "channel": {
+          "const": "email"
         }
       },
-      "then": {
-        "required": [
-          "event_id",
-          "human_name",
-          "team_name",
-          "people_count",
-          "channel",
-          "email",
-          "is_alone",
-          "is_birthday",
-          "is_extensible",
-          "is_first"
-        ]
-      }
+      "required": [
+        "channel",
+        "email"
+      ]
     }
   ]
 }

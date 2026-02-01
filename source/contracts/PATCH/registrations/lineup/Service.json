@@ -1,0 +1,32 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "lineup": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string",
+            "enum": [
+              "Main",
+              "Reserve"
+            ]
+          }
+        },
+        "required": [
+          "value"
+        ]
+      }
+    },
+    "required": [
+      "id",
+      "lineup"
+    ]
+  },
+  "uniqueItems": true
+}

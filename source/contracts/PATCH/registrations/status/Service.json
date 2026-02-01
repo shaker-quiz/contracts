@@ -1,0 +1,33 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "status": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string",
+            "enum": [
+              "Created",
+              "Confirmed",
+              "Cancelled"
+            ]
+          }
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "required": [
+      "id",
+      "status"
+    ]
+  },
+  "uniqueItems": true
+}

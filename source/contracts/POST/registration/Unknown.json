@@ -81,53 +81,59 @@
     "is_first"
   ],
   "additionalProperties": true,
-  "oneOf": [
+  "allOf": [
     {
-      "properties": {
-        "channel": {
-          "const": "vkontakte"
+      "if": {
+        "properties": {
+          "channel": {
+            "const": "vkontakte"
+          }
         },
-        "confirmed_channel": {
-          "type": "string"
-        },
-        "vkontakte": {
-          "type": "string"
-        }
+        "required": [
+          "channel"
+        ]
       },
-      "required": [
-        "confirmed_channel",
-        "vkontakte"
-      ]
+      "then": {
+        "required": [
+          "confirmed_channel",
+          "vkontakte"
+        ]
+      }
     },
     {
-      "properties": {
-        "channel": {
-          "const": "telegramBot"
+      "if": {
+        "properties": {
+          "channel": {
+            "const": "telegramBot"
+          }
         },
-        "confirmed_channel": {
-          "type": "string"
-        },
-        "telegramBot": {
-          "type": "string"
-        }
+        "required": [
+          "channel"
+        ]
       },
-      "required": [
-        "confirmed_channel",
-        "telegramBot"
-      ]
+      "then": {
+        "required": [
+          "confirmed_channel",
+          "telegramBot"
+        ]
+      }
     },
     {
-      "properties": {
-        "channel": {
-          "const": "email"
+      "if": {
+        "properties": {
+          "channel": {
+            "const": "email"
+          }
         },
-        "email": {
-          "type": "string"
-        }
+        "required": [
+          "channel"
+        ]
       },
-      "required": [
-        "email"
-      ]
+      "then": {
+        "required": [
+          "email"
+        ]
+      }
     }
   ]
 }

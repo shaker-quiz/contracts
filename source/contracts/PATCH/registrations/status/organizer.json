@@ -19,11 +19,11 @@
               "Cancelled"
             ]
           }
-        }
-      },
-      "required": [
-        "value"
-      ]
+        },
+        "required": [
+          "value"
+        ]
+      }
     },
     "required": [
       "id",

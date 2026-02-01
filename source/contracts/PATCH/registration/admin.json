@@ -10,12 +10,23 @@
     "people_count": {
       "type": "integer"
     },
-    "phone": {
+    "celebrant": {
       "type": "string"
     },
-    "email": {
-      "type": "string",
-      "format": "email"
+    "comment": {
+      "type": "string"
+    },
+    "is_alone": {
+      "type": "boolean"
+    },
+    "is_birthday": {
+      "type": "boolean"
+    },
+    "is_extensible": {
+      "type": "boolean"
+    },
+    "is_first": {
+      "type": "boolean"
     }
   },
   "required": [],

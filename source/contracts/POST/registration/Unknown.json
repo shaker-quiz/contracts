@@ -88,10 +88,7 @@
           "channel": {
             "const": "vkontakte"
           }
-        },
-        "required": [
-          "channel"
-        ]
+        }
       },
       "then": {
         "required": [
@@ -106,10 +103,7 @@
           "channel": {
             "const": "telegramBot"
           }
-        },
-        "required": [
-          "channel"
-        ]
+        }
       },
       "then": {
         "required": [
@@ -124,10 +118,7 @@
           "channel": {
             "const": "email"
           }
-        },
-        "required": [
-          "channel"
-        ]
+        }
       },
       "then": {
         "required": [

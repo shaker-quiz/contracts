@@ -9,7 +9,8 @@
     "url": "https://github.com/shaker-quiz/contracts.git"
   },
   "scripts": {
-    "prepublishOnly": "bun ./scripts/codegen.js"
+    "prepublishOnly": "bun ./scripts/codegen.js",
+    "verify:schemas": "bun ./scripts/verify-schemas.js"
   },
   "files": [
     "source"

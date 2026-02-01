@@ -1,35 +1,32 @@
 {
   "type": "object",
   "properties": {
+    "team_name": {
+      "type": "string"
+    },
+    "human_name": {
+      "type": "string"
+    },
     "people_count": {
       "type": "integer"
     },
-    "human_name": {
+    "celebrant": {
+      "type": "string"
+    },
+    "comment": {
       "type": "string"
     },
     "is_alone": {
       "type": "boolean"
     },
-    "is_reserve": {
+    "is_birthday": {
       "type": "boolean"
     },
-    "team_name": {
-      "type": "string"
+    "is_extensible": {
+      "type": "boolean"
     },
-    "status": {
-      "type": "string",
-      "enum": [
-        "Created",
-        "Confirmed",
-        "Cancelled"
-      ]
-    },
-    "lineup": {
-      "type": "string",
-      "enum": [
-        "Main",
-        "Reserve"
-      ]
+    "is_first": {
+      "type": "boolean"
     }
   },
   "required": [],

@@ -1,22 +1,89 @@
 {
   "type": "object",
-  "properties": {
-    "channel": {
-      "type": "string"
+  "anyOf": [
+    {
+      "if": {
+        "properties": {
+          "channel": {
+            "const": "vkontakte"
+          },
+          "confirmed_channel": {
+            "const": "vkontakte"
+          },
+          "email": {
+            "type": "string"
+          },
+          "vkontakte": {
+            "type": "string"
+          },
+          "telegramBot": {
+            "type": "string"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "channel",
+          "confirmed_channel",
+          "vkontakte"
+        ]
+      }
     },
-    "confirmed_channel": {
-      "type": "string"
+    {
+      "if": {
+        "properties": {
+          "channel": {
+            "const": "telegramBot"
+          },
+          "confirmed_channel": {
+            "const": "telegramBot"
+          },
+          "email": {
+            "type": "string"
+          },
+          "vkontakte": {
+            "type": "string"
+          },
+          "telegramBot": {
+            "type": "string"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "channel",
+          "confirmed_channel",
+          "telegramBot"
+        ]
+      }
     },
-    "email": {
-      "type": "string"
-    },
-    "vkontakte": {
-      "type": "string"
-    },
-    "telegramBot": {
-      "type": "string"
+    {
+      "if": {
+        "properties": {
+          "channel": {
+            "const": "email"
+          },
+          "confirmed_channel": {
+            "const": "email"
+          },
+          "email": {
+            "type": "string"
+          },
+          "vkontakte": {
+            "type": "string"
+          },
+          "telegramBot": {
+            "type": "string"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "channel",
+          "confirmed_channel",
+          "email"
+        ]
+      }
     }
-  },
-  "required": [],
-  "additionalProperties": false
+  ]
 }

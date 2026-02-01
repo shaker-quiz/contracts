@@ -1,8 +1,32 @@
 {
   "type": "object",
   "properties": {
+    "team_name": {
+      "type": "string"
+    },
+    "human_name": {
+      "type": "string"
+    },
     "people_count": {
       "type": "integer"
+    },
+    "celebrant": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "is_alone": {
+      "type": "boolean"
+    },
+    "is_birthday": {
+      "type": "boolean"
+    },
+    "is_extensible": {
+      "type": "boolean"
+    },
+    "is_first": {
+      "type": "boolean"
     }
   },
   "required": [],

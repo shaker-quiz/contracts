@@ -81,7 +81,7 @@
     "is_first"
   ],
   "additionalProperties": true,
-  "oneOf": [
+  "anyOf": [
     {
       "if": {
         "properties": {

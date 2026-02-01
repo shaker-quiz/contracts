@@ -87,6 +87,12 @@
         "properties": {
           "channel": {
             "const": "vkontakte"
+          },
+          "confirmed_channel": {
+            "type": "string"
+          },
+          "vkontakte": {
+            "type": "string"
           }
         }
       },
@@ -102,6 +108,12 @@
         "properties": {
           "channel": {
             "const": "telegramBot"
+          },
+          "confirmed_channel": {
+            "type": "string"
+          },
+          "telegramBot": {
+            "type": "string"
           }
         }
       },
@@ -117,6 +129,9 @@
         "properties": {
           "channel": {
             "const": "email"
+          },
+          "email": {
+            "type": "string"
           }
         }
       },

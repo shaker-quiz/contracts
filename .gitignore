@@ -9,7 +9,3 @@ node_modules
 # Misc
 
 .vscode
-
-# Artifacts
-
-source/index.js

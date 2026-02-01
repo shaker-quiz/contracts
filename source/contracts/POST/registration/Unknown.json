@@ -92,24 +92,36 @@
     "is_first"
   ],
   "additionalProperties": false,
-  "oneOf": [
+  "allOf": [
     {
-      "properties": {
-        "channel": { "const": "vkontakte" }
+      "if": {
+        "properties": {
+          "channel": { "const": "vkontakte" }
+        }
       },
-      "required": ["vkontakte", "confirmed_channel"]
+      "then": {
+        "required": ["vkontakte", "confirmed_channel"]
+      }
     },
     {
-      "properties": {
-        "channel": { "const": "telegramBot" }
+      "if": {
+        "properties": {
+          "channel": { "const": "telegramBot" }
+        }
       },
-      "required": ["telegramBot", "confirmed_channel"]
+      "then": {
+        "required": ["telegramBot", "confirmed_channel"]
+      }
     },
     {
-      "properties": {
-        "channel": { "const": "email" }
+      "if": {
+        "properties": {
+          "channel": { "const": "email" }
+        }
       },
-      "required": ["email"]
+      "then": {
+        "required": ["email"]
+      }
     }
   ]
 }

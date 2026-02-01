@@ -15,10 +15,10 @@
       "type": "integer"
     },
     "channel": {
-      "type": "vkontakte"
+      "type": "string"
     },
     "confirmed_channel": {
-      "type": "vkontakte"
+      "type": "string"
     },
     "email": {
       "type": "string"
@@ -89,7 +89,6 @@
         }
       },
       "required": [
-        "channel",
         "confirmed_channel",
         "vkontakte"
       ]
@@ -101,7 +100,6 @@
         }
       },
       "required": [
-        "channel",
         "confirmed_channel",
         "telegramBot"
       ]
@@ -113,7 +111,6 @@
         }
       },
       "required": [
-        "channel",
         "email"
       ]
     }

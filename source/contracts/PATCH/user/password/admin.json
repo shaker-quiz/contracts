@@ -1,20 +1,12 @@
 {
   "type": "object",
   "properties": {
-    "password": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "value"
-      ]
+    "value": {
+      "type": "string"
     }
   },
   "required": [
-    "password"
+    "value"
   ],
   "additionalProperties": false
 }

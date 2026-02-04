@@ -9,25 +9,17 @@
         "format": "uuid"
       },
       "status": {
-        "type": "object",
-        "properties": {
-          "value": {
-            "type": "string",
-            "enum": [
-              "APPROVED",
-              "ARCHIVE",
-              "CLOSED",
-              "FINISHED",
-              "FORINVITES",
-              "IS_RESERVE",
-              "MODERATION",
-              "PUBLISHED",
-              "REJECTED"
-            ]
-          }
-        },
-        "required": [
-          "value"
+        "type": "string",
+        "enum": [
+          "APPROVED",
+          "ARCHIVE",
+          "CLOSED",
+          "FINISHED",
+          "FORINVITES",
+          "IS_RESERVE",
+          "MODERATION",
+          "PUBLISHED",
+          "REJECTED"
         ]
       }
     },

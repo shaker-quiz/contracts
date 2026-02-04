@@ -16,7 +16,9 @@
       }
     },
     "required": [
-      "id"
+      "id",
+      "mailing",
+      "chatapp_id"
     ]
   }
 }

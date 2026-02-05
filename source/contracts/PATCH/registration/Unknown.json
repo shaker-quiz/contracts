@@ -14,11 +14,8 @@
     "celebrant": {
       "type": "string"
     },
-    "note": {
+    "comment": {
       "type": "string"
-    },
-    "is_alone": {
-      "type": "boolean"
     },
     "is_birthday": {
       "type": "boolean"

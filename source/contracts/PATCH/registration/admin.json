@@ -28,6 +28,9 @@
     },
     "is_first": {
       "type": "boolean"
+    },
+    "note": {
+      "type": "string"
     }
   },
   "required": [],

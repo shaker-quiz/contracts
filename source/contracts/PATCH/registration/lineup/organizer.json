@@ -3,18 +3,10 @@
   "type": "object",
   "properties": {
     "lineup": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "string",
-          "enum": [
-            "Main",
-            "Reserve"
-          ]
-        }
-      },
-      "required": [
-        "value"
+      "type": "string",
+      "enum": [
+        "Main",
+        "Reserve"
       ]
     }
   },

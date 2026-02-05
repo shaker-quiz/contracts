@@ -9,19 +9,13 @@
         "format": "uuid"
       },
       "lineup": {
-        "type": "object",
-        "properties": {
-          "value": {
-            "type": "string",
-            "enum": [
-              "Main",
-              "Reserve"
-            ]
-          }
-        },
-        "required": [
-          "value"
-        ]
+        "lineup": {
+          "type": "string",
+          "enum": [
+            "Main",
+            "Reserve"
+          ]
+        }
       }
     },
     "required": [

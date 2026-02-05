@@ -3,19 +3,11 @@
   "type": "object",
   "properties": {
     "status": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "string",
-          "enum": [
-            "Created",
-            "Confirmed",
-            "Cancelled"
-          ]
-        }
-      },
-      "required": [
-        "value"
+      "type": "string",
+      "enum": [
+        "Created",
+        "Confirmed",
+        "Cancelled"
       ]
     }
   },

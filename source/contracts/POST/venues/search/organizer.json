@@ -20,11 +20,23 @@
         ]
       },
       "uniqueItems": true
+    },
+    "audiences": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Open",
+          "Adults"
+        ]
+      },
+      "uniqueItems": true
     }
   },
   "required": [
     "ids",
-    "statuses"
+    "statuses",
+    "audiences"
   ],
   "additionalProperties": false
 }

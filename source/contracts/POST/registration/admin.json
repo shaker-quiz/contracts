@@ -31,13 +31,19 @@
       "type": "boolean"
     },
     "note": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "phone": {
       "type": "string"
     },
     "promocode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [

@@ -15,7 +15,10 @@
       "type": "string"
     },
     "comment": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "is_birthday": {
       "type": "boolean"

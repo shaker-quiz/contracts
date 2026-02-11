@@ -1,19 +1,17 @@
+import { $ } from 'bun'
 import template from './template.js' with { type: 'text' }
-
-import { Methods, Mode, Roles, Routes } from '@shakerquiz/utilities'
 
 let path = x => x.join('/')
 
 let schema = x => path(x).replaceAll('/', '_')
 
-let all = Methods
-  .flatMap(method => Routes.map(route => [method, route]))
-  .flatMap(([method, route]) => Roles.concat(Mode['Unknown']).map(role => [method, route, role]))
+let raw = await $`find ./source/contracts -type f -name '*.json'`
 
-let exists = await Promise
-  .all(all.map(x => Bun.file(`./source/contracts/${path(x)}.json`).exists()))
-  .then(exists => exists.reduce((set, e, i) => e ? set.add(all[i]) : set, new Set()))
-  .then(Array.from)
+let exists = raw
+  .text()
+  .split('\n')
+  .filter(Boolean)
+  .map(x => x.replace('./source/contracts/', '').replace('.json', '').split('/'))
 
 let imports = exists
   .map(x => `import ${schema(x)} from './contracts/${path(x)}.json' with { type: 'json' }`)

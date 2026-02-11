@@ -17,11 +17,19 @@
         "format": "uuid"
       },
       "uniqueItems": true
+    },
+    "city": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
     }
   },
   "required": [
     "user",
-    "role"
+    "role",
+    "city"
   ],
   "additionalProperties": false
 }

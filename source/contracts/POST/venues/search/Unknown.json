@@ -2,7 +2,14 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "cities": {
+    "city": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "venue": {
       "type": "array",
       "items": {
         "type": "string",
@@ -10,61 +17,50 @@
       },
       "uniqueItems": true
     },
-    "venues": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "format": "uuid"
-      },
-      "uniqueItems": true
-    },
-    "games": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "format": "uuid"
-      },
-      "uniqueItems": true
-    },
-    "ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "format": "uuid"
-      },
-      "uniqueItems": true
-    },
-    "statuses": {
+    "venue/status": {
       "type": "array",
       "items": {
         "type": "string",
         "enum": [
-          "Created",
-          "Confirmed",
-          "Cancelled"
+          "Active",
+          "Archive"
         ]
       },
       "uniqueItems": true
     },
-    "lineups": {
+    "venue/audience": {
       "type": "array",
       "items": {
         "type": "string",
         "enum": [
-          "Main",
-          "Reserve"
+          "Open",
+          "Adults"
         ]
+      },
+      "uniqueItems": true
+    },
+    "game": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "registration": {
+      "type": "array",
+      "items": {
+        "type": "string"
       },
       "uniqueItems": true
     }
   },
   "required": [
-    "cities",
-    "venues",
-    "games",
-    "ids",
-    "statuses",
-    "lineups"
+    "city",
+    "venue",
+    "venue/status",
+    "venue/audience",
+    "game",
+    "registration"
   ],
   "additionalProperties": false
 }

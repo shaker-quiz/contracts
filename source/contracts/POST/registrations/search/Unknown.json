@@ -2,7 +2,14 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "cities": {
+    "city": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "venue": {
       "type": "array",
       "items": {
         "type": "string",
@@ -10,31 +17,21 @@
       },
       "uniqueItems": true
     },
-    "venues": {
+    "game": {
       "type": "array",
       "items": {
-        "type": "string",
-        "format": "uuid"
+        "type": "string"
       },
       "uniqueItems": true
     },
-    "games": {
+    "registration": {
       "type": "array",
       "items": {
-        "type": "string",
-        "format": "uuid"
+        "type": "string"
       },
       "uniqueItems": true
     },
-    "ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "format": "uuid"
-      },
-      "uniqueItems": true
-    },
-    "statuses": {
+    "registration/status": {
       "type": "array",
       "items": {
         "type": "string",
@@ -46,7 +43,7 @@
       },
       "uniqueItems": true
     },
-    "lineups": {
+    "registration/lineup": {
       "type": "array",
       "items": {
         "type": "string",
@@ -59,12 +56,12 @@
     }
   },
   "required": [
-    "cities",
-    "venues",
-    "games",
-    "ids",
-    "statuses",
-    "lineups"
+    "city",
+    "venue",
+    "game",
+    "registration",
+    "registration/status",
+    "registration/lineup"
   ],
   "additionalProperties": false
 }

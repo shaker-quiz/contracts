@@ -17,6 +17,20 @@
     },
     "max_members_count": {
       "type": "integer"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "APPROVED",
+        "ARCHIVE",
+        "CLOSED",
+        "FINISHED",
+        "FORINVITES",
+        "IS_RESERVE",
+        "MODERATION",
+        "PUBLISHED",
+        "REJECTED"
+      ]
     }
   },
   "required": [],

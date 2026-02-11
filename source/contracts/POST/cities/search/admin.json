@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "ids": {
+    "user": {
       "type": "array",
       "items": {
         "type": "string",
@@ -10,21 +10,17 @@
       },
       "uniqueItems": true
     },
-    "statuses": {
+    "city": {
       "type": "array",
       "items": {
-        "type": "string",
-        "enum": [
-          "Active",
-          "Archive"
-        ]
+        "type": "string"
       },
       "uniqueItems": true
     }
   },
   "required": [
-    "ids",
-    "statuses"
+    "user",
+    "city"
   ],
   "additionalProperties": false
 }

@@ -15,7 +15,10 @@
       "type": "string"
     },
     "comment": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "is_alone": {
       "type": "boolean"
@@ -30,7 +33,10 @@
       "type": "boolean"
     },
     "note": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [],

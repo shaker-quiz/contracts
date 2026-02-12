@@ -53,16 +53,25 @@
       "type": "boolean"
     },
     "ads_from": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "comment": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "phone": {
       "type": "string"
     },
     "promocode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "utm_campaign": {
       "type": "string"

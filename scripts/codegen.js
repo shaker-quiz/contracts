@@ -1,5 +1,6 @@
-import { $ } from 'bun'
 import template from './template.js' with { type: 'text' }
+
+import { $ } from 'bun'
 
 let path = x => x.join('/')
 

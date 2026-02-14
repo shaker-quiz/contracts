@@ -26,7 +26,10 @@ import POST_registration_mailing_organizer from './contracts/POST/registration/m
 import POST_registration_admin from './contracts/POST/registration/admin.json' with { type: 'json' }
 import POST_registration_organizer from './contracts/POST/registration/organizer.json' with { type: 'json' }
 import POST_roles_search_admin from './contracts/POST/roles/search/admin.json' with { type: 'json' }
+import POST_users_role_search_admin from './contracts/POST/users/role/search/admin.json' with { type: 'json' }
+import POST_users_cities_search_admin from './contracts/POST/users/cities/search/admin.json' with { type: 'json' }
 import POST_users_search_admin from './contracts/POST/users/search/admin.json' with { type: 'json' }
+import POST_users_password_search_admin from './contracts/POST/users/password/search/admin.json' with { type: 'json' }
 import PATCH_theme_admin from './contracts/PATCH/theme/admin.json' with { type: 'json' }
 import PATCH_venues_admin from './contracts/PATCH/venues/admin.json' with { type: 'json' }
 import PATCH_venues_organizer from './contracts/PATCH/venues/organizer.json' with { type: 'json' }
@@ -95,7 +98,10 @@ export const Contracts = Object.freeze(
     'POST/registration/admin',
     'POST/registration/organizer',
     'POST/roles/search/admin',
+    'POST/users/role/search/admin',
+    'POST/users/cities/search/admin',
     'POST/users/search/admin',
+    'POST/users/password/search/admin',
     'PATCH/theme/admin',
     'PATCH/venues/admin',
     'PATCH/venues/organizer',
@@ -166,7 +172,10 @@ export const Schemas = Object.freeze(
     POST_registration_admin,
     POST_registration_organizer,
     POST_roles_search_admin,
+    POST_users_role_search_admin,
+    POST_users_cities_search_admin,
     POST_users_search_admin,
+    POST_users_password_search_admin,
     PATCH_theme_admin,
     PATCH_venues_admin,
     PATCH_venues_organizer,
@@ -237,7 +246,10 @@ export const ContractSchema = Object.freeze(
     'POST/registration/admin': POST_registration_admin,
     'POST/registration/organizer': POST_registration_organizer,
     'POST/roles/search/admin': POST_roles_search_admin,
+    'POST/users/role/search/admin': POST_users_role_search_admin,
+    'POST/users/cities/search/admin': POST_users_cities_search_admin,
     'POST/users/search/admin': POST_users_search_admin,
+    'POST/users/password/search/admin': POST_users_password_search_admin,
     'PATCH/theme/admin': PATCH_theme_admin,
     'PATCH/venues/admin': PATCH_venues_admin,
     'PATCH/venues/organizer': PATCH_venues_organizer,

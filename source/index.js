@@ -4,9 +4,21 @@ import POST_theme_admin from './contracts/POST/theme/admin.json' with { type: 'j
 import POST_venues_search_Unknown from './contracts/POST/venues/search/Unknown.json' with { type: 'json' }
 import POST_themes_search_Unknown from './contracts/POST/themes/search/Unknown.json' with { type: 'json' }
 import POST_checkin_Unknown from './contracts/POST/checkin/Unknown.json' with { type: 'json' }
+import POST_cities_venues_search_Unknown from './contracts/POST/cities/venues/search/Unknown.json' with { type: 'json' }
+import POST_cities_venues_search_admin from './contracts/POST/cities/venues/search/admin.json' with { type: 'json' }
+import POST_cities_venues_search_organizer from './contracts/POST/cities/venues/search/organizer.json' with { type: 'json' }
 import POST_cities_search_Unknown from './contracts/POST/cities/search/Unknown.json' with { type: 'json' }
 import POST_cities_search_admin from './contracts/POST/cities/search/admin.json' with { type: 'json' }
 import POST_cities_search_organizer from './contracts/POST/cities/search/organizer.json' with { type: 'json' }
+import POST_cities_timezone_search_Unknown from './contracts/POST/cities/timezone/search/Unknown.json' with { type: 'json' }
+import POST_cities_timezone_search_admin from './contracts/POST/cities/timezone/search/admin.json' with { type: 'json' }
+import POST_cities_timezone_search_organizer from './contracts/POST/cities/timezone/search/organizer.json' with { type: 'json' }
+import POST_cities_currency_search_Unknown from './contracts/POST/cities/currency/search/Unknown.json' with { type: 'json' }
+import POST_cities_currency_search_admin from './contracts/POST/cities/currency/search/admin.json' with { type: 'json' }
+import POST_cities_currency_search_organizer from './contracts/POST/cities/currency/search/organizer.json' with { type: 'json' }
+import POST_cities_country_search_Unknown from './contracts/POST/cities/country/search/Unknown.json' with { type: 'json' }
+import POST_cities_country_search_admin from './contracts/POST/cities/country/search/admin.json' with { type: 'json' }
+import POST_cities_country_search_organizer from './contracts/POST/cities/country/search/organizer.json' with { type: 'json' }
 import POST_user_role_admin from './contracts/POST/user/role/admin.json' with { type: 'json' }
 import POST_user_city_admin from './contracts/POST/user/city/admin.json' with { type: 'json' }
 import POST_user_password_admin from './contracts/POST/user/password/admin.json' with { type: 'json' }
@@ -76,9 +88,21 @@ export const Contracts = Object.freeze(
     'POST/venues/search/Unknown',
     'POST/themes/search/Unknown',
     'POST/checkin/Unknown',
+    'POST/cities/venues/search/Unknown',
+    'POST/cities/venues/search/admin',
+    'POST/cities/venues/search/organizer',
     'POST/cities/search/Unknown',
     'POST/cities/search/admin',
     'POST/cities/search/organizer',
+    'POST/cities/timezone/search/Unknown',
+    'POST/cities/timezone/search/admin',
+    'POST/cities/timezone/search/organizer',
+    'POST/cities/currency/search/Unknown',
+    'POST/cities/currency/search/admin',
+    'POST/cities/currency/search/organizer',
+    'POST/cities/country/search/Unknown',
+    'POST/cities/country/search/admin',
+    'POST/cities/country/search/organizer',
     'POST/user/role/admin',
     'POST/user/city/admin',
     'POST/user/password/admin',
@@ -150,9 +174,21 @@ export const Schemas = Object.freeze(
     POST_venues_search_Unknown,
     POST_themes_search_Unknown,
     POST_checkin_Unknown,
+    POST_cities_venues_search_Unknown,
+    POST_cities_venues_search_admin,
+    POST_cities_venues_search_organizer,
     POST_cities_search_Unknown,
     POST_cities_search_admin,
     POST_cities_search_organizer,
+    POST_cities_timezone_search_Unknown,
+    POST_cities_timezone_search_admin,
+    POST_cities_timezone_search_organizer,
+    POST_cities_currency_search_Unknown,
+    POST_cities_currency_search_admin,
+    POST_cities_currency_search_organizer,
+    POST_cities_country_search_Unknown,
+    POST_cities_country_search_admin,
+    POST_cities_country_search_organizer,
     POST_user_role_admin,
     POST_user_city_admin,
     POST_user_password_admin,
@@ -224,9 +260,21 @@ export const ContractSchema = Object.freeze(
     'POST/venues/search/Unknown': POST_venues_search_Unknown,
     'POST/themes/search/Unknown': POST_themes_search_Unknown,
     'POST/checkin/Unknown': POST_checkin_Unknown,
+    'POST/cities/venues/search/Unknown': POST_cities_venues_search_Unknown,
+    'POST/cities/venues/search/admin': POST_cities_venues_search_admin,
+    'POST/cities/venues/search/organizer': POST_cities_venues_search_organizer,
     'POST/cities/search/Unknown': POST_cities_search_Unknown,
     'POST/cities/search/admin': POST_cities_search_admin,
     'POST/cities/search/organizer': POST_cities_search_organizer,
+    'POST/cities/timezone/search/Unknown': POST_cities_timezone_search_Unknown,
+    'POST/cities/timezone/search/admin': POST_cities_timezone_search_admin,
+    'POST/cities/timezone/search/organizer': POST_cities_timezone_search_organizer,
+    'POST/cities/currency/search/Unknown': POST_cities_currency_search_Unknown,
+    'POST/cities/currency/search/admin': POST_cities_currency_search_admin,
+    'POST/cities/currency/search/organizer': POST_cities_currency_search_organizer,
+    'POST/cities/country/search/Unknown': POST_cities_country_search_Unknown,
+    'POST/cities/country/search/admin': POST_cities_country_search_admin,
+    'POST/cities/country/search/organizer': POST_cities_country_search_organizer,
     'POST/user/role/admin': POST_user_role_admin,
     'POST/user/city/admin': POST_user_city_admin,
     'POST/user/password/admin': POST_user_password_admin,

@@ -8,10 +8,18 @@
         "type": "string"
       },
       "uniqueItems": true
+    },
+    "timezone": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
     }
   },
   "required": [
-    "city"
+    "city",
+    "timezone"
   ],
   "additionalProperties": false
 }

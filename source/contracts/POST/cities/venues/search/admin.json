@@ -8,10 +8,19 @@
         "type": "string"
       },
       "uniqueItems": true
+    },
+    "venue": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "uniqueItems": true
     }
   },
   "required": [
-    "city"
+    "city",
+    "venue"
   ],
   "additionalProperties": false
 }

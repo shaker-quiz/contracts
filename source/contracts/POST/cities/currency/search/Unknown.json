@@ -8,18 +8,10 @@
         "type": "string"
       },
       "uniqueItems": true
-    },
-    "currency": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "uniqueItems": true
     }
   },
   "required": [
-    "city",
-    "currency"
+    "city"
   ],
   "additionalProperties": false
 }

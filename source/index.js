@@ -28,6 +28,7 @@ import POST_game_registrations_export_organizer from './contracts/POST/game/regi
 import POST_game_admin from './contracts/POST/game/admin.json' with { type: 'json' }
 import POST_game_organizer from './contracts/POST/game/organizer.json' with { type: 'json' }
 import POST_registrations_search_Unknown from './contracts/POST/registrations/search/Unknown.json' with { type: 'json' }
+import POST_city_vk_group_token_admin from './contracts/POST/city/vk_group_token/admin.json' with { type: 'json' }
 import POST_city_admin from './contracts/POST/city/admin.json' with { type: 'json' }
 import POST_games_search_Unknown from './contracts/POST/games/search/Unknown.json' with { type: 'json' }
 import POST_venue_admin from './contracts/POST/venue/admin.json' with { type: 'json' }
@@ -62,6 +63,7 @@ import PATCH_registrations_lineup_organizer from './contracts/PATCH/registration
 import PATCH_city_timezone_admin from './contracts/PATCH/city/timezone/admin.json' with { type: 'json' }
 import PATCH_city_currency_admin from './contracts/PATCH/city/currency/admin.json' with { type: 'json' }
 import PATCH_city_country_admin from './contracts/PATCH/city/country/admin.json' with { type: 'json' }
+import PATCH_city_vk_group_token_admin from './contracts/PATCH/city/vk_group_token/admin.json' with { type: 'json' }
 import PATCH_city_admin from './contracts/PATCH/city/admin.json' with { type: 'json' }
 import PATCH_games_status_Service from './contracts/PATCH/games/status/Service.json' with { type: 'json' }
 import PATCH_games_status_admin from './contracts/PATCH/games/status/admin.json' with { type: 'json' }
@@ -115,6 +117,7 @@ export const Contracts = Object.freeze(
     'POST/game/admin',
     'POST/game/organizer',
     'POST/registrations/search/Unknown',
+    'POST/city/vk_group_token/admin',
     'POST/city/admin',
     'POST/games/search/Unknown',
     'POST/venue/admin',
@@ -149,6 +152,7 @@ export const Contracts = Object.freeze(
     'PATCH/city/timezone/admin',
     'PATCH/city/currency/admin',
     'PATCH/city/country/admin',
+    'PATCH/city/vk_group_token/admin',
     'PATCH/city/admin',
     'PATCH/games/status/Service',
     'PATCH/games/status/admin',
@@ -204,6 +208,7 @@ export const Schemas = Object.freeze(
     POST_game_admin,
     POST_game_organizer,
     POST_registrations_search_Unknown,
+    POST_city_vk_group_token_admin,
     POST_city_admin,
     POST_games_search_Unknown,
     POST_venue_admin,
@@ -238,6 +243,7 @@ export const Schemas = Object.freeze(
     PATCH_city_timezone_admin,
     PATCH_city_currency_admin,
     PATCH_city_country_admin,
+    PATCH_city_vk_group_token_admin,
     PATCH_city_admin,
     PATCH_games_status_Service,
     PATCH_games_status_admin,
@@ -293,6 +299,7 @@ export const ContractSchema = Object.freeze(
     'POST/game/admin': POST_game_admin,
     'POST/game/organizer': POST_game_organizer,
     'POST/registrations/search/Unknown': POST_registrations_search_Unknown,
+    'POST/city/vk_group_token/admin': POST_city_vk_group_token_admin,
     'POST/city/admin': POST_city_admin,
     'POST/games/search/Unknown': POST_games_search_Unknown,
     'POST/venue/admin': POST_venue_admin,
@@ -327,6 +334,7 @@ export const ContractSchema = Object.freeze(
     'PATCH/city/timezone/admin': PATCH_city_timezone_admin,
     'PATCH/city/currency/admin': PATCH_city_currency_admin,
     'PATCH/city/country/admin': PATCH_city_country_admin,
+    'PATCH/city/vk_group_token/admin': PATCH_city_vk_group_token_admin,
     'PATCH/city/admin': PATCH_city_admin,
     'PATCH/games/status/Service': PATCH_games_status_Service,
     'PATCH/games/status/admin': PATCH_games_status_admin,

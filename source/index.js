@@ -61,6 +61,7 @@ import PATCH_registrations_lineup_admin from './contracts/PATCH/registrations/li
 import PATCH_registrations_lineup_organizer from './contracts/PATCH/registrations/lineup/organizer.json' with { type: 'json' }
 import PATCH_city_timezone_admin from './contracts/PATCH/city/timezone/admin.json' with { type: 'json' }
 import PATCH_city_currency_admin from './contracts/PATCH/city/currency/admin.json' with { type: 'json' }
+import PATCH_city_country_admin from './contracts/PATCH/city/country/admin.json' with { type: 'json' }
 import PATCH_city_admin from './contracts/PATCH/city/admin.json' with { type: 'json' }
 import PATCH_games_status_Service from './contracts/PATCH/games/status/Service.json' with { type: 'json' }
 import PATCH_games_status_admin from './contracts/PATCH/games/status/admin.json' with { type: 'json' }
@@ -147,6 +148,7 @@ export const Contracts = Object.freeze(
     'PATCH/registrations/lineup/organizer',
     'PATCH/city/timezone/admin',
     'PATCH/city/currency/admin',
+    'PATCH/city/country/admin',
     'PATCH/city/admin',
     'PATCH/games/status/Service',
     'PATCH/games/status/admin',
@@ -235,6 +237,7 @@ export const Schemas = Object.freeze(
     PATCH_registrations_lineup_organizer,
     PATCH_city_timezone_admin,
     PATCH_city_currency_admin,
+    PATCH_city_country_admin,
     PATCH_city_admin,
     PATCH_games_status_Service,
     PATCH_games_status_admin,
@@ -323,6 +326,7 @@ export const ContractSchema = Object.freeze(
     'PATCH/registrations/lineup/organizer': PATCH_registrations_lineup_organizer,
     'PATCH/city/timezone/admin': PATCH_city_timezone_admin,
     'PATCH/city/currency/admin': PATCH_city_currency_admin,
+    'PATCH/city/country/admin': PATCH_city_country_admin,
     'PATCH/city/admin': PATCH_city_admin,
     'PATCH/games/status/Service': PATCH_games_status_Service,
     'PATCH/games/status/admin': PATCH_games_status_admin,

@@ -8,7 +8,7 @@
     "alias": {
       "type": "string"
     },
-    "country": {
+    "country_id": {
       "type": "string",
       "enum": [
         "AC",
@@ -276,7 +276,7 @@
         "ZZ"
       ]
     },
-    "currency_name": {
+    "currency_id": {
       "type": "string",
       "enum": [
         "ADP",
@@ -588,7 +588,7 @@
         "ZWR"
       ]
     },
-    "timezone_name": {
+    "timezone_id": {
       "type": "string",
       "enum": [
         "Africa/Abidjan",
@@ -1191,9 +1191,9 @@
   "required": [
     "name",
     "alias",
-    "country",
-    "currency_name",
-    "timezone_name"
+    "country_id",
+    "currency_id",
+    "timezone_id"
   ],
   "additionalProperties": false
 }

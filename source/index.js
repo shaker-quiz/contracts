@@ -89,6 +89,7 @@ import PATCH_registration_lineup_admin from './contracts/PATCH/registration/line
 import PATCH_registration_lineup_organizer from './contracts/PATCH/registration/lineup/organizer.json' with { type: 'json' }
 import PATCH_registration_admin from './contracts/PATCH/registration/admin.json' with { type: 'json' }
 import PATCH_registration_organizer from './contracts/PATCH/registration/organizer.json' with { type: 'json' }
+import PUT_theme_cover_admin from './contracts/PUT/theme/cover/admin.json' with { type: 'json' }
 
 export const Contracts = Object.freeze(
   /** @type {const} */ ([
@@ -182,7 +183,8 @@ export const Contracts = Object.freeze(
     'PATCH/registration/lineup/admin',
     'PATCH/registration/lineup/organizer',
     'PATCH/registration/admin',
-    'PATCH/registration/organizer'
+    'PATCH/registration/organizer',
+    'PUT/theme/cover/admin'
   ]),
 )
 
@@ -278,7 +280,8 @@ export const Schemas = Object.freeze(
     PATCH_registration_lineup_admin,
     PATCH_registration_lineup_organizer,
     PATCH_registration_admin,
-    PATCH_registration_organizer
+    PATCH_registration_organizer,
+    PUT_theme_cover_admin
   ]),
 )
 
@@ -374,6 +377,7 @@ export const ContractSchema = Object.freeze(
     'PATCH/registration/lineup/admin': PATCH_registration_lineup_admin,
     'PATCH/registration/lineup/organizer': PATCH_registration_lineup_organizer,
     'PATCH/registration/admin': PATCH_registration_admin,
-    'PATCH/registration/organizer': PATCH_registration_organizer
+    'PATCH/registration/organizer': PATCH_registration_organizer,
+    'PUT/theme/cover/admin': PUT_theme_cover_admin
   }),
 )

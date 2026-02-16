@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "theme": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "uniqueItems": true
+    },
+    "theme/status": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Active",
+          "Archive"
+        ]
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "theme",
+    "theme/status"
+  ],
+  "additionalProperties": false
+}

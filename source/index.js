@@ -1,7 +1,10 @@
 import POST_chatapp_registration_mailing_admin from './contracts/POST/chatapp/registration/mailing/admin.json' with { type: 'json' }
 import POST_chatapp_registration_mailing_organizer from './contracts/POST/chatapp/registration/mailing/organizer.json' with { type: 'json' }
 import POST_theme_admin from './contracts/POST/theme/admin.json' with { type: 'json' }
-import POST_venues_search_Unknown from './contracts/POST/venues/search/Unknown.json' with { type: 'json' }
+import POST_venues_city_search_admin from './contracts/POST/venues/city/search/admin.json' with { type: 'json' }
+import POST_venues_city_search_organizer from './contracts/POST/venues/city/search/organizer.json' with { type: 'json' }
+import POST_venues_search_admin from './contracts/POST/venues/search/admin.json' with { type: 'json' }
+import POST_venues_search_organizer from './contracts/POST/venues/search/organizer.json' with { type: 'json' }
 import POST_themes_search_Unknown from './contracts/POST/themes/search/Unknown.json' with { type: 'json' }
 import POST_checkin_Unknown from './contracts/POST/checkin/Unknown.json' with { type: 'json' }
 import POST_cities_venues_search_Unknown from './contracts/POST/cities/venues/search/Unknown.json' with { type: 'json' }
@@ -90,7 +93,10 @@ export const Contracts = Object.freeze(
     'POST/chatapp/registration/mailing/admin',
     'POST/chatapp/registration/mailing/organizer',
     'POST/theme/admin',
-    'POST/venues/search/Unknown',
+    'POST/venues/city/search/admin',
+    'POST/venues/city/search/organizer',
+    'POST/venues/search/admin',
+    'POST/venues/search/organizer',
     'POST/themes/search/Unknown',
     'POST/checkin/Unknown',
     'POST/cities/venues/search/Unknown',
@@ -181,7 +187,10 @@ export const Schemas = Object.freeze(
     POST_chatapp_registration_mailing_admin,
     POST_chatapp_registration_mailing_organizer,
     POST_theme_admin,
-    POST_venues_search_Unknown,
+    POST_venues_city_search_admin,
+    POST_venues_city_search_organizer,
+    POST_venues_search_admin,
+    POST_venues_search_organizer,
     POST_themes_search_Unknown,
     POST_checkin_Unknown,
     POST_cities_venues_search_Unknown,
@@ -272,7 +281,10 @@ export const ContractSchema = Object.freeze(
     'POST/chatapp/registration/mailing/admin': POST_chatapp_registration_mailing_admin,
     'POST/chatapp/registration/mailing/organizer': POST_chatapp_registration_mailing_organizer,
     'POST/theme/admin': POST_theme_admin,
-    'POST/venues/search/Unknown': POST_venues_search_Unknown,
+    'POST/venues/city/search/admin': POST_venues_city_search_admin,
+    'POST/venues/city/search/organizer': POST_venues_city_search_organizer,
+    'POST/venues/search/admin': POST_venues_search_admin,
+    'POST/venues/search/organizer': POST_venues_search_organizer,
     'POST/themes/search/Unknown': POST_themes_search_Unknown,
     'POST/checkin/Unknown': POST_checkin_Unknown,
     'POST/cities/venues/search/Unknown': POST_cities_venues_search_Unknown,

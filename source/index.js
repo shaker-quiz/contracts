@@ -37,7 +37,16 @@ import POST_game_organizer from './contracts/POST/game/organizer.json' with { ty
 import POST_registrations_search_Unknown from './contracts/POST/registrations/search/Unknown.json' with { type: 'json' }
 import POST_city_vk_group_token_admin from './contracts/POST/city/vk_group_token/admin.json' with { type: 'json' }
 import POST_city_admin from './contracts/POST/city/admin.json' with { type: 'json' }
-import POST_games_search_Unknown from './contracts/POST/games/search/Unknown.json' with { type: 'json' }
+import POST_games_theme_search_admin from './contracts/POST/games/theme/search/admin.json' with { type: 'json' }
+import POST_games_theme_search_organizer from './contracts/POST/games/theme/search/organizer.json' with { type: 'json' }
+import POST_games_city_search_admin from './contracts/POST/games/city/search/admin.json' with { type: 'json' }
+import POST_games_city_search_organizer from './contracts/POST/games/city/search/organizer.json' with { type: 'json' }
+import POST_games_search_admin from './contracts/POST/games/search/admin.json' with { type: 'json' }
+import POST_games_search_organizer from './contracts/POST/games/search/organizer.json' with { type: 'json' }
+import POST_games_venue_search_admin from './contracts/POST/games/venue/search/admin.json' with { type: 'json' }
+import POST_games_venue_search_organizer from './contracts/POST/games/venue/search/organizer.json' with { type: 'json' }
+import POST_games_summary_search_admin from './contracts/POST/games/summary/search/admin.json' with { type: 'json' }
+import POST_games_summary_search_organizer from './contracts/POST/games/summary/search/organizer.json' with { type: 'json' }
 import POST_venue_admin from './contracts/POST/venue/admin.json' with { type: 'json' }
 import POST_venue_organizer from './contracts/POST/venue/organizer.json' with { type: 'json' }
 import POST_registration_Unknown from './contracts/POST/registration/Unknown.json' with { type: 'json' }
@@ -134,7 +143,16 @@ export const Contracts = Object.freeze(
     'POST/registrations/search/Unknown',
     'POST/city/vk_group_token/admin',
     'POST/city/admin',
-    'POST/games/search/Unknown',
+    'POST/games/theme/search/admin',
+    'POST/games/theme/search/organizer',
+    'POST/games/city/search/admin',
+    'POST/games/city/search/organizer',
+    'POST/games/search/admin',
+    'POST/games/search/organizer',
+    'POST/games/venue/search/admin',
+    'POST/games/venue/search/organizer',
+    'POST/games/summary/search/admin',
+    'POST/games/summary/search/organizer',
     'POST/venue/admin',
     'POST/venue/organizer',
     'POST/registration/Unknown',
@@ -233,7 +251,16 @@ export const Schemas = Object.freeze(
     POST_registrations_search_Unknown,
     POST_city_vk_group_token_admin,
     POST_city_admin,
-    POST_games_search_Unknown,
+    POST_games_theme_search_admin,
+    POST_games_theme_search_organizer,
+    POST_games_city_search_admin,
+    POST_games_city_search_organizer,
+    POST_games_search_admin,
+    POST_games_search_organizer,
+    POST_games_venue_search_admin,
+    POST_games_venue_search_organizer,
+    POST_games_summary_search_admin,
+    POST_games_summary_search_organizer,
     POST_venue_admin,
     POST_venue_organizer,
     POST_registration_Unknown,
@@ -332,7 +359,16 @@ export const ContractSchema = Object.freeze(
     'POST/registrations/search/Unknown': POST_registrations_search_Unknown,
     'POST/city/vk_group_token/admin': POST_city_vk_group_token_admin,
     'POST/city/admin': POST_city_admin,
-    'POST/games/search/Unknown': POST_games_search_Unknown,
+    'POST/games/theme/search/admin': POST_games_theme_search_admin,
+    'POST/games/theme/search/organizer': POST_games_theme_search_organizer,
+    'POST/games/city/search/admin': POST_games_city_search_admin,
+    'POST/games/city/search/organizer': POST_games_city_search_organizer,
+    'POST/games/search/admin': POST_games_search_admin,
+    'POST/games/search/organizer': POST_games_search_organizer,
+    'POST/games/venue/search/admin': POST_games_venue_search_admin,
+    'POST/games/venue/search/organizer': POST_games_venue_search_organizer,
+    'POST/games/summary/search/admin': POST_games_summary_search_admin,
+    'POST/games/summary/search/organizer': POST_games_summary_search_organizer,
     'POST/venue/admin': POST_venue_admin,
     'POST/venue/organizer': POST_venue_organizer,
     'POST/registration/Unknown': POST_registration_Unknown,

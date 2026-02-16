@@ -5,7 +5,8 @@ import POST_venues_city_search_admin from './contracts/POST/venues/city/search/a
 import POST_venues_city_search_organizer from './contracts/POST/venues/city/search/organizer.json' with { type: 'json' }
 import POST_venues_search_admin from './contracts/POST/venues/search/admin.json' with { type: 'json' }
 import POST_venues_search_organizer from './contracts/POST/venues/search/organizer.json' with { type: 'json' }
-import POST_themes_search_Unknown from './contracts/POST/themes/search/Unknown.json' with { type: 'json' }
+import POST_themes_search_admin from './contracts/POST/themes/search/admin.json' with { type: 'json' }
+import POST_themes_search_organizer from './contracts/POST/themes/search/organizer.json' with { type: 'json' }
 import POST_checkin_Unknown from './contracts/POST/checkin/Unknown.json' with { type: 'json' }
 import POST_cities_venues_search_Unknown from './contracts/POST/cities/venues/search/Unknown.json' with { type: 'json' }
 import POST_cities_venues_search_admin from './contracts/POST/cities/venues/search/admin.json' with { type: 'json' }
@@ -97,7 +98,8 @@ export const Contracts = Object.freeze(
     'POST/venues/city/search/organizer',
     'POST/venues/search/admin',
     'POST/venues/search/organizer',
-    'POST/themes/search/Unknown',
+    'POST/themes/search/admin',
+    'POST/themes/search/organizer',
     'POST/checkin/Unknown',
     'POST/cities/venues/search/Unknown',
     'POST/cities/venues/search/admin',
@@ -191,7 +193,8 @@ export const Schemas = Object.freeze(
     POST_venues_city_search_organizer,
     POST_venues_search_admin,
     POST_venues_search_organizer,
-    POST_themes_search_Unknown,
+    POST_themes_search_admin,
+    POST_themes_search_organizer,
     POST_checkin_Unknown,
     POST_cities_venues_search_Unknown,
     POST_cities_venues_search_admin,
@@ -285,7 +288,8 @@ export const ContractSchema = Object.freeze(
     'POST/venues/city/search/organizer': POST_venues_city_search_organizer,
     'POST/venues/search/admin': POST_venues_search_admin,
     'POST/venues/search/organizer': POST_venues_search_organizer,
-    'POST/themes/search/Unknown': POST_themes_search_Unknown,
+    'POST/themes/search/admin': POST_themes_search_admin,
+    'POST/themes/search/organizer': POST_themes_search_organizer,
     'POST/checkin/Unknown': POST_checkin_Unknown,
     'POST/cities/venues/search/Unknown': POST_cities_venues_search_Unknown,
     'POST/cities/venues/search/admin': POST_cities_venues_search_admin,

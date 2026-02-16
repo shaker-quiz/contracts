@@ -24,9 +24,7 @@
       }
     },
     "required": [
-      "id",
-      "status",
-      "audience"
+      "id"
     ],
     "additionalProperties": false
   },

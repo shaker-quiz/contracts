@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "venue": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "uniqueItems": true
+    },
+    "venue/status": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Active",
+          "Archive"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "venue/audience": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Open",
+          "Adults"
+        ]
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "venue",
+    "venue/status",
+    "venue/audience"
+  ],
+  "additionalProperties": false
+}

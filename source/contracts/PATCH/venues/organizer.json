@@ -14,11 +14,19 @@
           "Active",
           "Archive"
         ]
+      },
+      "audience": {
+        "type": "string",
+        "enum": [
+          "Open",
+          "Adults"
+        ]
       }
     },
     "required": [
       "id",
-      "status"
+      "status",
+      "audience"
     ],
     "additionalProperties": false
   },

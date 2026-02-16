@@ -17,13 +17,6 @@
     "team_capacity": {
       "type": "integer"
     },
-    "audience": {
-      "type": "string",
-      "enum": [
-        "Open",
-        "Adults"
-      ]
-    },
     "game_time": {
       "type": "string",
       "format": "iso-time"
@@ -39,6 +32,13 @@
       "enum": [
         "Active",
         "Archive"
+      ]
+    },
+    "audience": {
+      "type": "string",
+      "enum": [
+        "Open",
+        "Adults"
       ]
     },
     "href": {

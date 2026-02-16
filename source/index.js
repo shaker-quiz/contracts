@@ -1,5 +1,6 @@
 import POST_chatapp_registration_mailing_admin from './contracts/POST/chatapp/registration/mailing/admin.json' with { type: 'json' }
 import POST_chatapp_registration_mailing_organizer from './contracts/POST/chatapp/registration/mailing/organizer.json' with { type: 'json' }
+import POST_theme_cover_admin from './contracts/POST/theme/cover/admin.json' with { type: 'json' }
 import POST_theme_admin from './contracts/POST/theme/admin.json' with { type: 'json' }
 import POST_venues_city_search_admin from './contracts/POST/venues/city/search/admin.json' with { type: 'json' }
 import POST_venues_city_search_organizer from './contracts/POST/venues/city/search/organizer.json' with { type: 'json' }
@@ -93,6 +94,7 @@ export const Contracts = Object.freeze(
   /** @type {const} */ ([
     'POST/chatapp/registration/mailing/admin',
     'POST/chatapp/registration/mailing/organizer',
+    'POST/theme/cover/admin',
     'POST/theme/admin',
     'POST/venues/city/search/admin',
     'POST/venues/city/search/organizer',
@@ -188,6 +190,7 @@ export const Schemas = Object.freeze(
   /** @type {const} */ ([
     POST_chatapp_registration_mailing_admin,
     POST_chatapp_registration_mailing_organizer,
+    POST_theme_cover_admin,
     POST_theme_admin,
     POST_venues_city_search_admin,
     POST_venues_city_search_organizer,
@@ -283,6 +286,7 @@ export const ContractSchema = Object.freeze(
   /** @type {const} */ ({
     'POST/chatapp/registration/mailing/admin': POST_chatapp_registration_mailing_admin,
     'POST/chatapp/registration/mailing/organizer': POST_chatapp_registration_mailing_organizer,
+    'POST/theme/cover/admin': POST_theme_cover_admin,
     'POST/theme/admin': POST_theme_admin,
     'POST/venues/city/search/admin': POST_venues_city_search_admin,
     'POST/venues/city/search/organizer': POST_venues_city_search_organizer,

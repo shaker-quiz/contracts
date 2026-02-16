@@ -20,38 +20,11 @@
         ]
       },
       "uniqueItems": true
-    },
-    "cover": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "format": "uuid"
-      },
-      "uniqueItems": true
-    },
-    "game": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "format": "uuid"
-      },
-      "uniqueItems": true
-    },
-    "registration": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "format": "uuid"
-      },
-      "uniqueItems": true
     }
   },
   "required": [
     "theme",
-    "theme/status",
-    "cover",
-    "game",
-    "registration"
+    "theme/status"
   ],
   "additionalProperties": false
 }

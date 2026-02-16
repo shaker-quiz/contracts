@@ -72,9 +72,9 @@ import PATCH_city_currency_admin from './contracts/PATCH/city/currency/admin.jso
 import PATCH_city_country_admin from './contracts/PATCH/city/country/admin.json' with { type: 'json' }
 import PATCH_city_vk_group_token_admin from './contracts/PATCH/city/vk_group_token/admin.json' with { type: 'json' }
 import PATCH_city_admin from './contracts/PATCH/city/admin.json' with { type: 'json' }
-import PATCH_games_status_Service from './contracts/PATCH/games/status/Service.json' with { type: 'json' }
-import PATCH_games_status_admin from './contracts/PATCH/games/status/admin.json' with { type: 'json' }
-import PATCH_games_status_organizer from './contracts/PATCH/games/status/organizer.json' with { type: 'json' }
+import PATCH_games_Service from './contracts/PATCH/games/Service.json' with { type: 'json' }
+import PATCH_games_admin from './contracts/PATCH/games/admin.json' with { type: 'json' }
+import PATCH_games_organizer from './contracts/PATCH/games/organizer.json' with { type: 'json' }
 import PATCH_venue_admin from './contracts/PATCH/venue/admin.json' with { type: 'json' }
 import PATCH_venue_organizer from './contracts/PATCH/venue/organizer.json' with { type: 'json' }
 import PATCH_registration_Service from './contracts/PATCH/registration/Service.json' with { type: 'json' }
@@ -169,9 +169,9 @@ export const Contracts = Object.freeze(
     'PATCH/city/country/admin',
     'PATCH/city/vk_group_token/admin',
     'PATCH/city/admin',
-    'PATCH/games/status/Service',
-    'PATCH/games/status/admin',
-    'PATCH/games/status/organizer',
+    'PATCH/games/Service',
+    'PATCH/games/admin',
+    'PATCH/games/organizer',
     'PATCH/venue/admin',
     'PATCH/venue/organizer',
     'PATCH/registration/Service',
@@ -268,9 +268,9 @@ export const Schemas = Object.freeze(
     PATCH_city_country_admin,
     PATCH_city_vk_group_token_admin,
     PATCH_city_admin,
-    PATCH_games_status_Service,
-    PATCH_games_status_admin,
-    PATCH_games_status_organizer,
+    PATCH_games_Service,
+    PATCH_games_admin,
+    PATCH_games_organizer,
     PATCH_venue_admin,
     PATCH_venue_organizer,
     PATCH_registration_Service,
@@ -367,9 +367,9 @@ export const ContractSchema = Object.freeze(
     'PATCH/city/country/admin': PATCH_city_country_admin,
     'PATCH/city/vk_group_token/admin': PATCH_city_vk_group_token_admin,
     'PATCH/city/admin': PATCH_city_admin,
-    'PATCH/games/status/Service': PATCH_games_status_Service,
-    'PATCH/games/status/admin': PATCH_games_status_admin,
-    'PATCH/games/status/organizer': PATCH_games_status_organizer,
+    'PATCH/games/Service': PATCH_games_Service,
+    'PATCH/games/admin': PATCH_games_admin,
+    'PATCH/games/organizer': PATCH_games_organizer,
     'PATCH/venue/admin': PATCH_venue_admin,
     'PATCH/venue/organizer': PATCH_venue_organizer,
     'PATCH/registration/Service': PATCH_registration_Service,

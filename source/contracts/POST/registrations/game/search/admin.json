@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "registration": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "registration/status": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Created",
+          "Confirmed",
+          "Cancelled"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "registration/lineup": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Main",
+          "Reserve"
+        ]
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "registration",
+    "registration/status",
+    "registration/lineup"
+  ],
+  "additionalProperties": false
+}

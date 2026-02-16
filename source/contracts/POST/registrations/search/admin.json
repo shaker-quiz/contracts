@@ -2,28 +2,6 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "city": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "uniqueItems": true
-    },
-    "venue": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "format": "uuid"
-      },
-      "uniqueItems": true
-    },
-    "game": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "uniqueItems": true
-    },
     "registration": {
       "type": "array",
       "items": {
@@ -56,9 +34,6 @@
     }
   },
   "required": [
-    "city",
-    "venue",
-    "game",
     "registration",
     "registration/status",
     "registration/lineup"

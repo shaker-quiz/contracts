@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@shakerquiz/contracts",
-  "version": "0.0.163",
+  "version": "0.0.165",
   "author": "yurkimus <yurkimus@gmail.com>",
   "license": "ISC",
   "repository": {
@@ -16,7 +16,7 @@
   ],
   "exports": "./source/index.js",
   "devDependencies": {
-    "@shakerquiz/utilities": "4.0.70",
+    "@shakerquiz/utilities": "4.0.71",
     "@types/bun": "1.3.7"
   }
 }

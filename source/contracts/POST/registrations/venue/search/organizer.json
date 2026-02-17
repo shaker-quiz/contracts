@@ -31,12 +31,27 @@
         ]
       },
       "uniqueItems": true
+    },
+    "registration/interval": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "1 month",
+          "3 months",
+          "6 months",
+          "1 year",
+          "all time"
+        ]
+      },
+      "uniqueItems": true
     }
   },
   "required": [
     "registration",
     "registration/status",
-    "registration/lineup"
+    "registration/lineup",
+    "registration/interval"
   ],
   "additionalProperties": false
 }

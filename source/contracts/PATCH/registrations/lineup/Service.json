@@ -9,13 +9,11 @@
         "format": "uuid"
       },
       "lineup": {
-        "lineup": {
-          "type": "string",
-          "enum": [
-            "Main",
-            "Reserve"
-          ]
-        }
+        "type": "string",
+        "enum": [
+          "Main",
+          "Reserve"
+        ]
       }
     },
     "required": [

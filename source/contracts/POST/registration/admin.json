@@ -21,13 +21,13 @@
     "is_alone": {
       "type": "boolean"
     },
+    "is_first": {
+      "type": "boolean"
+    },
     "is_birthday": {
       "type": "boolean"
     },
     "is_extensible": {
-      "type": "boolean"
-    },
-    "is_first": {
       "type": "boolean"
     },
     "note": {

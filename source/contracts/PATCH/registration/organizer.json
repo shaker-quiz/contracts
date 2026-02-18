@@ -11,22 +11,16 @@
     "people_count": {
       "type": "integer"
     },
-    "celebrant": {
-      "type": "string"
-    },
-    "comment": {
-      "type": "string"
-    },
     "is_alone": {
+      "type": "boolean"
+    },
+    "is_first": {
       "type": "boolean"
     },
     "is_birthday": {
       "type": "boolean"
     },
     "is_extensible": {
-      "type": "boolean"
-    },
-    "is_first": {
       "type": "boolean"
     },
     "note": {

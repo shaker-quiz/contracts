@@ -30,22 +30,44 @@ import POST_user_role_admin from './contracts/POST/user/role/admin.json' with { 
 import POST_user_city_admin from './contracts/POST/user/city/admin.json' with { type: 'json' }
 import POST_user_password_admin from './contracts/POST/user/password/admin.json' with { type: 'json' }
 import POST_user_admin from './contracts/POST/user/admin.json' with { type: 'json' }
-import POST_game_registrations_export_admin from './contracts/POST/game/registrations/export/admin.json' with { type: 'json' }
-import POST_game_registrations_export_organizer from './contracts/POST/game/registrations/export/organizer.json' with { type: 'json' }
 import POST_game_admin from './contracts/POST/game/admin.json' with { type: 'json' }
 import POST_game_organizer from './contracts/POST/game/organizer.json' with { type: 'json' }
+import POST_registrations_theme_search_Service from './contracts/POST/registrations/theme/search/Service.json' with { type: 'json' }
+import POST_registrations_theme_search_Unknown from './contracts/POST/registrations/theme/search/Unknown.json' with { type: 'json' }
 import POST_registrations_theme_search_admin from './contracts/POST/registrations/theme/search/admin.json' with { type: 'json' }
 import POST_registrations_theme_search_organizer from './contracts/POST/registrations/theme/search/organizer.json' with { type: 'json' }
+import POST_registrations_confirmation_search_Service from './contracts/POST/registrations/confirmation/search/Service.json' with { type: 'json' }
+import POST_registrations_confirmation_search_Unknown from './contracts/POST/registrations/confirmation/search/Unknown.json' with { type: 'json' }
+import POST_registrations_confirmation_search_admin from './contracts/POST/registrations/confirmation/search/admin.json' with { type: 'json' }
+import POST_registrations_confirmation_search_organizer from './contracts/POST/registrations/confirmation/search/organizer.json' with { type: 'json' }
+import POST_registrations_game_search_Service from './contracts/POST/registrations/game/search/Service.json' with { type: 'json' }
+import POST_registrations_game_search_Unknown from './contracts/POST/registrations/game/search/Unknown.json' with { type: 'json' }
 import POST_registrations_game_search_admin from './contracts/POST/registrations/game/search/admin.json' with { type: 'json' }
 import POST_registrations_game_search_organizer from './contracts/POST/registrations/game/search/organizer.json' with { type: 'json' }
+import POST_registrations_cancellation_search_Service from './contracts/POST/registrations/cancellation/search/Service.json' with { type: 'json' }
+import POST_registrations_cancellation_search_Unknown from './contracts/POST/registrations/cancellation/search/Unknown.json' with { type: 'json' }
+import POST_registrations_cancellation_search_admin from './contracts/POST/registrations/cancellation/search/admin.json' with { type: 'json' }
+import POST_registrations_cancellation_search_organizer from './contracts/POST/registrations/cancellation/search/organizer.json' with { type: 'json' }
+import POST_registrations_city_search_Service from './contracts/POST/registrations/city/search/Service.json' with { type: 'json' }
+import POST_registrations_city_search_Unknown from './contracts/POST/registrations/city/search/Unknown.json' with { type: 'json' }
 import POST_registrations_city_search_admin from './contracts/POST/registrations/city/search/admin.json' with { type: 'json' }
 import POST_registrations_city_search_organizer from './contracts/POST/registrations/city/search/organizer.json' with { type: 'json' }
 import POST_registrations_search_admin from './contracts/POST/registrations/search/admin.json' with { type: 'json' }
 import POST_registrations_search_organizer from './contracts/POST/registrations/search/organizer.json' with { type: 'json' }
+import POST_registrations_venue_search_Service from './contracts/POST/registrations/venue/search/Service.json' with { type: 'json' }
+import POST_registrations_venue_search_Unknown from './contracts/POST/registrations/venue/search/Unknown.json' with { type: 'json' }
 import POST_registrations_venue_search_admin from './contracts/POST/registrations/venue/search/admin.json' with { type: 'json' }
 import POST_registrations_venue_search_organizer from './contracts/POST/registrations/venue/search/organizer.json' with { type: 'json' }
+import POST_registrations_status_search_Service from './contracts/POST/registrations/status/search/Service.json' with { type: 'json' }
+import POST_registrations_status_search_Unknown from './contracts/POST/registrations/status/search/Unknown.json' with { type: 'json' }
 import POST_registrations_status_search_admin from './contracts/POST/registrations/status/search/admin.json' with { type: 'json' }
 import POST_registrations_status_search_organizer from './contracts/POST/registrations/status/search/organizer.json' with { type: 'json' }
+import POST_registrations_cover_search_Service from './contracts/POST/registrations/cover/search/Service.json' with { type: 'json' }
+import POST_registrations_cover_search_Unknown from './contracts/POST/registrations/cover/search/Unknown.json' with { type: 'json' }
+import POST_registrations_cover_search_admin from './contracts/POST/registrations/cover/search/admin.json' with { type: 'json' }
+import POST_registrations_cover_search_organizer from './contracts/POST/registrations/cover/search/organizer.json' with { type: 'json' }
+import POST_registrations_lineup_search_Service from './contracts/POST/registrations/lineup/search/Service.json' with { type: 'json' }
+import POST_registrations_lineup_search_Unknown from './contracts/POST/registrations/lineup/search/Unknown.json' with { type: 'json' }
 import POST_registrations_lineup_search_admin from './contracts/POST/registrations/lineup/search/admin.json' with { type: 'json' }
 import POST_registrations_lineup_search_organizer from './contracts/POST/registrations/lineup/search/organizer.json' with { type: 'json' }
 import POST_city_vk_group_token_admin from './contracts/POST/city/vk_group_token/admin.json' with { type: 'json' }
@@ -149,22 +171,44 @@ export const Contracts = Object.freeze(
     'POST/user/city/admin',
     'POST/user/password/admin',
     'POST/user/admin',
-    'POST/game/registrations/export/admin',
-    'POST/game/registrations/export/organizer',
     'POST/game/admin',
     'POST/game/organizer',
+    'POST/registrations/theme/search/Service',
+    'POST/registrations/theme/search/Unknown',
     'POST/registrations/theme/search/admin',
     'POST/registrations/theme/search/organizer',
+    'POST/registrations/confirmation/search/Service',
+    'POST/registrations/confirmation/search/Unknown',
+    'POST/registrations/confirmation/search/admin',
+    'POST/registrations/confirmation/search/organizer',
+    'POST/registrations/game/search/Service',
+    'POST/registrations/game/search/Unknown',
     'POST/registrations/game/search/admin',
     'POST/registrations/game/search/organizer',
+    'POST/registrations/cancellation/search/Service',
+    'POST/registrations/cancellation/search/Unknown',
+    'POST/registrations/cancellation/search/admin',
+    'POST/registrations/cancellation/search/organizer',
+    'POST/registrations/city/search/Service',
+    'POST/registrations/city/search/Unknown',
     'POST/registrations/city/search/admin',
     'POST/registrations/city/search/organizer',
     'POST/registrations/search/admin',
     'POST/registrations/search/organizer',
+    'POST/registrations/venue/search/Service',
+    'POST/registrations/venue/search/Unknown',
     'POST/registrations/venue/search/admin',
     'POST/registrations/venue/search/organizer',
+    'POST/registrations/status/search/Service',
+    'POST/registrations/status/search/Unknown',
     'POST/registrations/status/search/admin',
     'POST/registrations/status/search/organizer',
+    'POST/registrations/cover/search/Service',
+    'POST/registrations/cover/search/Unknown',
+    'POST/registrations/cover/search/admin',
+    'POST/registrations/cover/search/organizer',
+    'POST/registrations/lineup/search/Service',
+    'POST/registrations/lineup/search/Unknown',
     'POST/registrations/lineup/search/admin',
     'POST/registrations/lineup/search/organizer',
     'POST/city/vk_group_token/admin',
@@ -270,22 +314,44 @@ export const Schemas = Object.freeze(
     POST_user_city_admin,
     POST_user_password_admin,
     POST_user_admin,
-    POST_game_registrations_export_admin,
-    POST_game_registrations_export_organizer,
     POST_game_admin,
     POST_game_organizer,
+    POST_registrations_theme_search_Service,
+    POST_registrations_theme_search_Unknown,
     POST_registrations_theme_search_admin,
     POST_registrations_theme_search_organizer,
+    POST_registrations_confirmation_search_Service,
+    POST_registrations_confirmation_search_Unknown,
+    POST_registrations_confirmation_search_admin,
+    POST_registrations_confirmation_search_organizer,
+    POST_registrations_game_search_Service,
+    POST_registrations_game_search_Unknown,
     POST_registrations_game_search_admin,
     POST_registrations_game_search_organizer,
+    POST_registrations_cancellation_search_Service,
+    POST_registrations_cancellation_search_Unknown,
+    POST_registrations_cancellation_search_admin,
+    POST_registrations_cancellation_search_organizer,
+    POST_registrations_city_search_Service,
+    POST_registrations_city_search_Unknown,
     POST_registrations_city_search_admin,
     POST_registrations_city_search_organizer,
     POST_registrations_search_admin,
     POST_registrations_search_organizer,
+    POST_registrations_venue_search_Service,
+    POST_registrations_venue_search_Unknown,
     POST_registrations_venue_search_admin,
     POST_registrations_venue_search_organizer,
+    POST_registrations_status_search_Service,
+    POST_registrations_status_search_Unknown,
     POST_registrations_status_search_admin,
     POST_registrations_status_search_organizer,
+    POST_registrations_cover_search_Service,
+    POST_registrations_cover_search_Unknown,
+    POST_registrations_cover_search_admin,
+    POST_registrations_cover_search_organizer,
+    POST_registrations_lineup_search_Service,
+    POST_registrations_lineup_search_Unknown,
     POST_registrations_lineup_search_admin,
     POST_registrations_lineup_search_organizer,
     POST_city_vk_group_token_admin,
@@ -391,22 +457,44 @@ export const ContractSchema = Object.freeze(
     'POST/user/city/admin': POST_user_city_admin,
     'POST/user/password/admin': POST_user_password_admin,
     'POST/user/admin': POST_user_admin,
-    'POST/game/registrations/export/admin': POST_game_registrations_export_admin,
-    'POST/game/registrations/export/organizer': POST_game_registrations_export_organizer,
     'POST/game/admin': POST_game_admin,
     'POST/game/organizer': POST_game_organizer,
+    'POST/registrations/theme/search/Service': POST_registrations_theme_search_Service,
+    'POST/registrations/theme/search/Unknown': POST_registrations_theme_search_Unknown,
     'POST/registrations/theme/search/admin': POST_registrations_theme_search_admin,
     'POST/registrations/theme/search/organizer': POST_registrations_theme_search_organizer,
+    'POST/registrations/confirmation/search/Service': POST_registrations_confirmation_search_Service,
+    'POST/registrations/confirmation/search/Unknown': POST_registrations_confirmation_search_Unknown,
+    'POST/registrations/confirmation/search/admin': POST_registrations_confirmation_search_admin,
+    'POST/registrations/confirmation/search/organizer': POST_registrations_confirmation_search_organizer,
+    'POST/registrations/game/search/Service': POST_registrations_game_search_Service,
+    'POST/registrations/game/search/Unknown': POST_registrations_game_search_Unknown,
     'POST/registrations/game/search/admin': POST_registrations_game_search_admin,
     'POST/registrations/game/search/organizer': POST_registrations_game_search_organizer,
+    'POST/registrations/cancellation/search/Service': POST_registrations_cancellation_search_Service,
+    'POST/registrations/cancellation/search/Unknown': POST_registrations_cancellation_search_Unknown,
+    'POST/registrations/cancellation/search/admin': POST_registrations_cancellation_search_admin,
+    'POST/registrations/cancellation/search/organizer': POST_registrations_cancellation_search_organizer,
+    'POST/registrations/city/search/Service': POST_registrations_city_search_Service,
+    'POST/registrations/city/search/Unknown': POST_registrations_city_search_Unknown,
     'POST/registrations/city/search/admin': POST_registrations_city_search_admin,
     'POST/registrations/city/search/organizer': POST_registrations_city_search_organizer,
     'POST/registrations/search/admin': POST_registrations_search_admin,
     'POST/registrations/search/organizer': POST_registrations_search_organizer,
+    'POST/registrations/venue/search/Service': POST_registrations_venue_search_Service,
+    'POST/registrations/venue/search/Unknown': POST_registrations_venue_search_Unknown,
     'POST/registrations/venue/search/admin': POST_registrations_venue_search_admin,
     'POST/registrations/venue/search/organizer': POST_registrations_venue_search_organizer,
+    'POST/registrations/status/search/Service': POST_registrations_status_search_Service,
+    'POST/registrations/status/search/Unknown': POST_registrations_status_search_Unknown,
     'POST/registrations/status/search/admin': POST_registrations_status_search_admin,
     'POST/registrations/status/search/organizer': POST_registrations_status_search_organizer,
+    'POST/registrations/cover/search/Service': POST_registrations_cover_search_Service,
+    'POST/registrations/cover/search/Unknown': POST_registrations_cover_search_Unknown,
+    'POST/registrations/cover/search/admin': POST_registrations_cover_search_admin,
+    'POST/registrations/cover/search/organizer': POST_registrations_cover_search_organizer,
+    'POST/registrations/lineup/search/Service': POST_registrations_lineup_search_Service,
+    'POST/registrations/lineup/search/Unknown': POST_registrations_lineup_search_Unknown,
     'POST/registrations/lineup/search/admin': POST_registrations_lineup_search_admin,
     'POST/registrations/lineup/search/organizer': POST_registrations_lineup_search_organizer,
     'POST/city/vk_group_token/admin': POST_city_vk_group_token_admin,

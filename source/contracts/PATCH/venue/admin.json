@@ -11,17 +11,30 @@
     "house_number": {
       "type": "string"
     },
+    "game_time": {
+      "type": "string",
+      "format": "iso-time"
+    },
+    "audience": {
+      "type": "string",
+      "enum": [
+        "Open",
+        "Adults"
+      ]
+    },
     "people_capacity": {
       "type": "integer"
     },
     "team_capacity": {
       "type": "integer"
     },
-    "game_time": {
-      "type": "string",
-      "format": "iso-time"
-    },
     "location_info": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "href": {
       "type": [
         "string",
         "null"
@@ -32,19 +45,6 @@
       "enum": [
         "Active",
         "Archive"
-      ]
-    },
-    "audience": {
-      "type": "string",
-      "enum": [
-        "Open",
-        "Adults"
-      ]
-    },
-    "href": {
-      "type": [
-        "string",
-        "null"
       ]
     }
   },

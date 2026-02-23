@@ -40,6 +40,7 @@ import POST_registrations_confirmation_search_Service from './contracts/POST/reg
 import POST_registrations_confirmation_search_Unknown from './contracts/POST/registrations/confirmation/search/Unknown.json' with { type: 'json' }
 import POST_registrations_confirmation_search_admin from './contracts/POST/registrations/confirmation/search/admin.json' with { type: 'json' }
 import POST_registrations_confirmation_search_organizer from './contracts/POST/registrations/confirmation/search/organizer.json' with { type: 'json' }
+import POST_registrations_channel_search_Unknown from './contracts/POST/registrations/channel/search/Unknown.json' with { type: 'json' }
 import POST_registrations_game_search_Service from './contracts/POST/registrations/game/search/Service.json' with { type: 'json' }
 import POST_registrations_game_search_Unknown from './contracts/POST/registrations/game/search/Unknown.json' with { type: 'json' }
 import POST_registrations_game_search_admin from './contracts/POST/registrations/game/search/admin.json' with { type: 'json' }
@@ -52,6 +53,7 @@ import POST_registrations_city_search_Service from './contracts/POST/registratio
 import POST_registrations_city_search_Unknown from './contracts/POST/registrations/city/search/Unknown.json' with { type: 'json' }
 import POST_registrations_city_search_admin from './contracts/POST/registrations/city/search/admin.json' with { type: 'json' }
 import POST_registrations_city_search_organizer from './contracts/POST/registrations/city/search/organizer.json' with { type: 'json' }
+import POST_registrations_search_Unknown from './contracts/POST/registrations/search/Unknown.json' with { type: 'json' }
 import POST_registrations_search_admin from './contracts/POST/registrations/search/admin.json' with { type: 'json' }
 import POST_registrations_search_organizer from './contracts/POST/registrations/search/organizer.json' with { type: 'json' }
 import POST_registrations_venue_search_Service from './contracts/POST/registrations/venue/search/Service.json' with { type: 'json' }
@@ -72,14 +74,18 @@ import POST_registrations_lineup_search_admin from './contracts/POST/registratio
 import POST_registrations_lineup_search_organizer from './contracts/POST/registrations/lineup/search/organizer.json' with { type: 'json' }
 import POST_city_vk_group_token_admin from './contracts/POST/city/vk_group_token/admin.json' with { type: 'json' }
 import POST_city_admin from './contracts/POST/city/admin.json' with { type: 'json' }
+import POST_games_theme_search_Unknown from './contracts/POST/games/theme/search/Unknown.json' with { type: 'json' }
 import POST_games_theme_search_admin from './contracts/POST/games/theme/search/admin.json' with { type: 'json' }
 import POST_games_theme_search_organizer from './contracts/POST/games/theme/search/organizer.json' with { type: 'json' }
 import POST_games_city_search_admin from './contracts/POST/games/city/search/admin.json' with { type: 'json' }
 import POST_games_city_search_organizer from './contracts/POST/games/city/search/organizer.json' with { type: 'json' }
+import POST_games_search_Unknown from './contracts/POST/games/search/Unknown.json' with { type: 'json' }
 import POST_games_search_admin from './contracts/POST/games/search/admin.json' with { type: 'json' }
 import POST_games_search_organizer from './contracts/POST/games/search/organizer.json' with { type: 'json' }
+import POST_games_venue_search_Unknown from './contracts/POST/games/venue/search/Unknown.json' with { type: 'json' }
 import POST_games_venue_search_admin from './contracts/POST/games/venue/search/admin.json' with { type: 'json' }
 import POST_games_venue_search_organizer from './contracts/POST/games/venue/search/organizer.json' with { type: 'json' }
+import POST_games_cover_search_Unknown from './contracts/POST/games/cover/search/Unknown.json' with { type: 'json' }
 import POST_games_summary_search_admin from './contracts/POST/games/summary/search/admin.json' with { type: 'json' }
 import POST_games_summary_search_organizer from './contracts/POST/games/summary/search/organizer.json' with { type: 'json' }
 import POST_venue_admin from './contracts/POST/venue/admin.json' with { type: 'json' }
@@ -112,10 +118,15 @@ import PATCH_registrations_lineup_Service from './contracts/PATCH/registrations/
 import PATCH_registrations_lineup_admin from './contracts/PATCH/registrations/lineup/admin.json' with { type: 'json' }
 import PATCH_registrations_lineup_organizer from './contracts/PATCH/registrations/lineup/organizer.json' with { type: 'json' }
 import PATCH_city_timezone_admin from './contracts/PATCH/city/timezone/admin.json' with { type: 'json' }
+import PATCH_city_timezone_organizer from './contracts/PATCH/city/timezone/organizer.json' with { type: 'json' }
 import PATCH_city_currency_admin from './contracts/PATCH/city/currency/admin.json' with { type: 'json' }
+import PATCH_city_currency_organizer from './contracts/PATCH/city/currency/organizer.json' with { type: 'json' }
 import PATCH_city_country_admin from './contracts/PATCH/city/country/admin.json' with { type: 'json' }
+import PATCH_city_country_organizer from './contracts/PATCH/city/country/organizer.json' with { type: 'json' }
 import PATCH_city_vk_group_token_admin from './contracts/PATCH/city/vk_group_token/admin.json' with { type: 'json' }
+import PATCH_city_vk_group_token_organizer from './contracts/PATCH/city/vk_group_token/organizer.json' with { type: 'json' }
 import PATCH_city_admin from './contracts/PATCH/city/admin.json' with { type: 'json' }
+import PATCH_city_organizer from './contracts/PATCH/city/organizer.json' with { type: 'json' }
 import PATCH_games_Service from './contracts/PATCH/games/Service.json' with { type: 'json' }
 import PATCH_games_admin from './contracts/PATCH/games/admin.json' with { type: 'json' }
 import PATCH_games_organizer from './contracts/PATCH/games/organizer.json' with { type: 'json' }
@@ -136,6 +147,7 @@ import PATCH_registration_lineup_organizer from './contracts/PATCH/registration/
 import PATCH_registration_admin from './contracts/PATCH/registration/admin.json' with { type: 'json' }
 import PATCH_registration_organizer from './contracts/PATCH/registration/organizer.json' with { type: 'json' }
 import PUT_theme_cover_admin from './contracts/PUT/theme/cover/admin.json' with { type: 'json' }
+import PUT_theme_cover_organizer from './contracts/PUT/theme/cover/organizer.json' with { type: 'json' }
 
 export const Contracts = Object.freeze(
   /** @type {const} */ ([
@@ -181,6 +193,7 @@ export const Contracts = Object.freeze(
     'POST/registrations/confirmation/search/Unknown',
     'POST/registrations/confirmation/search/admin',
     'POST/registrations/confirmation/search/organizer',
+    'POST/registrations/channel/search/Unknown',
     'POST/registrations/game/search/Service',
     'POST/registrations/game/search/Unknown',
     'POST/registrations/game/search/admin',
@@ -193,6 +206,7 @@ export const Contracts = Object.freeze(
     'POST/registrations/city/search/Unknown',
     'POST/registrations/city/search/admin',
     'POST/registrations/city/search/organizer',
+    'POST/registrations/search/Unknown',
     'POST/registrations/search/admin',
     'POST/registrations/search/organizer',
     'POST/registrations/venue/search/Service',
@@ -213,14 +227,18 @@ export const Contracts = Object.freeze(
     'POST/registrations/lineup/search/organizer',
     'POST/city/vk_group_token/admin',
     'POST/city/admin',
+    'POST/games/theme/search/Unknown',
     'POST/games/theme/search/admin',
     'POST/games/theme/search/organizer',
     'POST/games/city/search/admin',
     'POST/games/city/search/organizer',
+    'POST/games/search/Unknown',
     'POST/games/search/admin',
     'POST/games/search/organizer',
+    'POST/games/venue/search/Unknown',
     'POST/games/venue/search/admin',
     'POST/games/venue/search/organizer',
+    'POST/games/cover/search/Unknown',
     'POST/games/summary/search/admin',
     'POST/games/summary/search/organizer',
     'POST/venue/admin',
@@ -253,10 +271,15 @@ export const Contracts = Object.freeze(
     'PATCH/registrations/lineup/admin',
     'PATCH/registrations/lineup/organizer',
     'PATCH/city/timezone/admin',
+    'PATCH/city/timezone/organizer',
     'PATCH/city/currency/admin',
+    'PATCH/city/currency/organizer',
     'PATCH/city/country/admin',
+    'PATCH/city/country/organizer',
     'PATCH/city/vk_group_token/admin',
+    'PATCH/city/vk_group_token/organizer',
     'PATCH/city/admin',
+    'PATCH/city/organizer',
     'PATCH/games/Service',
     'PATCH/games/admin',
     'PATCH/games/organizer',
@@ -276,7 +299,8 @@ export const Contracts = Object.freeze(
     'PATCH/registration/lineup/organizer',
     'PATCH/registration/admin',
     'PATCH/registration/organizer',
-    'PUT/theme/cover/admin'
+    'PUT/theme/cover/admin',
+    'PUT/theme/cover/organizer'
   ]),
 )
 
@@ -324,6 +348,7 @@ export const Schemas = Object.freeze(
     POST_registrations_confirmation_search_Unknown,
     POST_registrations_confirmation_search_admin,
     POST_registrations_confirmation_search_organizer,
+    POST_registrations_channel_search_Unknown,
     POST_registrations_game_search_Service,
     POST_registrations_game_search_Unknown,
     POST_registrations_game_search_admin,
@@ -336,6 +361,7 @@ export const Schemas = Object.freeze(
     POST_registrations_city_search_Unknown,
     POST_registrations_city_search_admin,
     POST_registrations_city_search_organizer,
+    POST_registrations_search_Unknown,
     POST_registrations_search_admin,
     POST_registrations_search_organizer,
     POST_registrations_venue_search_Service,
@@ -356,14 +382,18 @@ export const Schemas = Object.freeze(
     POST_registrations_lineup_search_organizer,
     POST_city_vk_group_token_admin,
     POST_city_admin,
+    POST_games_theme_search_Unknown,
     POST_games_theme_search_admin,
     POST_games_theme_search_organizer,
     POST_games_city_search_admin,
     POST_games_city_search_organizer,
+    POST_games_search_Unknown,
     POST_games_search_admin,
     POST_games_search_organizer,
+    POST_games_venue_search_Unknown,
     POST_games_venue_search_admin,
     POST_games_venue_search_organizer,
+    POST_games_cover_search_Unknown,
     POST_games_summary_search_admin,
     POST_games_summary_search_organizer,
     POST_venue_admin,
@@ -396,10 +426,15 @@ export const Schemas = Object.freeze(
     PATCH_registrations_lineup_admin,
     PATCH_registrations_lineup_organizer,
     PATCH_city_timezone_admin,
+    PATCH_city_timezone_organizer,
     PATCH_city_currency_admin,
+    PATCH_city_currency_organizer,
     PATCH_city_country_admin,
+    PATCH_city_country_organizer,
     PATCH_city_vk_group_token_admin,
+    PATCH_city_vk_group_token_organizer,
     PATCH_city_admin,
+    PATCH_city_organizer,
     PATCH_games_Service,
     PATCH_games_admin,
     PATCH_games_organizer,
@@ -419,7 +454,8 @@ export const Schemas = Object.freeze(
     PATCH_registration_lineup_organizer,
     PATCH_registration_admin,
     PATCH_registration_organizer,
-    PUT_theme_cover_admin
+    PUT_theme_cover_admin,
+    PUT_theme_cover_organizer
   ]),
 )
 
@@ -467,6 +503,7 @@ export const ContractSchema = Object.freeze(
     'POST/registrations/confirmation/search/Unknown': POST_registrations_confirmation_search_Unknown,
     'POST/registrations/confirmation/search/admin': POST_registrations_confirmation_search_admin,
     'POST/registrations/confirmation/search/organizer': POST_registrations_confirmation_search_organizer,
+    'POST/registrations/channel/search/Unknown': POST_registrations_channel_search_Unknown,
     'POST/registrations/game/search/Service': POST_registrations_game_search_Service,
     'POST/registrations/game/search/Unknown': POST_registrations_game_search_Unknown,
     'POST/registrations/game/search/admin': POST_registrations_game_search_admin,
@@ -479,6 +516,7 @@ export const ContractSchema = Object.freeze(
     'POST/registrations/city/search/Unknown': POST_registrations_city_search_Unknown,
     'POST/registrations/city/search/admin': POST_registrations_city_search_admin,
     'POST/registrations/city/search/organizer': POST_registrations_city_search_organizer,
+    'POST/registrations/search/Unknown': POST_registrations_search_Unknown,
     'POST/registrations/search/admin': POST_registrations_search_admin,
     'POST/registrations/search/organizer': POST_registrations_search_organizer,
     'POST/registrations/venue/search/Service': POST_registrations_venue_search_Service,
@@ -499,14 +537,18 @@ export const ContractSchema = Object.freeze(
     'POST/registrations/lineup/search/organizer': POST_registrations_lineup_search_organizer,
     'POST/city/vk_group_token/admin': POST_city_vk_group_token_admin,
     'POST/city/admin': POST_city_admin,
+    'POST/games/theme/search/Unknown': POST_games_theme_search_Unknown,
     'POST/games/theme/search/admin': POST_games_theme_search_admin,
     'POST/games/theme/search/organizer': POST_games_theme_search_organizer,
     'POST/games/city/search/admin': POST_games_city_search_admin,
     'POST/games/city/search/organizer': POST_games_city_search_organizer,
+    'POST/games/search/Unknown': POST_games_search_Unknown,
     'POST/games/search/admin': POST_games_search_admin,
     'POST/games/search/organizer': POST_games_search_organizer,
+    'POST/games/venue/search/Unknown': POST_games_venue_search_Unknown,
     'POST/games/venue/search/admin': POST_games_venue_search_admin,
     'POST/games/venue/search/organizer': POST_games_venue_search_organizer,
+    'POST/games/cover/search/Unknown': POST_games_cover_search_Unknown,
     'POST/games/summary/search/admin': POST_games_summary_search_admin,
     'POST/games/summary/search/organizer': POST_games_summary_search_organizer,
     'POST/venue/admin': POST_venue_admin,
@@ -539,10 +581,15 @@ export const ContractSchema = Object.freeze(
     'PATCH/registrations/lineup/admin': PATCH_registrations_lineup_admin,
     'PATCH/registrations/lineup/organizer': PATCH_registrations_lineup_organizer,
     'PATCH/city/timezone/admin': PATCH_city_timezone_admin,
+    'PATCH/city/timezone/organizer': PATCH_city_timezone_organizer,
     'PATCH/city/currency/admin': PATCH_city_currency_admin,
+    'PATCH/city/currency/organizer': PATCH_city_currency_organizer,
     'PATCH/city/country/admin': PATCH_city_country_admin,
+    'PATCH/city/country/organizer': PATCH_city_country_organizer,
     'PATCH/city/vk_group_token/admin': PATCH_city_vk_group_token_admin,
+    'PATCH/city/vk_group_token/organizer': PATCH_city_vk_group_token_organizer,
     'PATCH/city/admin': PATCH_city_admin,
+    'PATCH/city/organizer': PATCH_city_organizer,
     'PATCH/games/Service': PATCH_games_Service,
     'PATCH/games/admin': PATCH_games_admin,
     'PATCH/games/organizer': PATCH_games_organizer,
@@ -562,6 +609,7 @@ export const ContractSchema = Object.freeze(
     'PATCH/registration/lineup/organizer': PATCH_registration_lineup_organizer,
     'PATCH/registration/admin': PATCH_registration_admin,
     'PATCH/registration/organizer': PATCH_registration_organizer,
-    'PUT/theme/cover/admin': PUT_theme_cover_admin
+    'PUT/theme/cover/admin': PUT_theme_cover_admin,
+    'PUT/theme/cover/organizer': PUT_theme_cover_organizer
   }),
 )

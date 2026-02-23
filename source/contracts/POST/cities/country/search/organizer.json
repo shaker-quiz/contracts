@@ -17,9 +17,6 @@
       "uniqueItems": true
     }
   },
-  "required": [
-    "city",
-    "country"
-  ],
+  "required": [],
   "additionalProperties": false
 }

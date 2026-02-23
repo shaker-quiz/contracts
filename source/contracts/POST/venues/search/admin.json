@@ -33,10 +33,6 @@
       "uniqueItems": true
     }
   },
-  "required": [
-    "venue",
-    "venue/status",
-    "venue/audience"
-  ],
+  "required": [],
   "additionalProperties": false
 }

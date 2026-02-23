@@ -57,11 +57,6 @@
       "uniqueItems": true
     }
   },
-  "required": [
-    "registration",
-    "registration/status",
-    "registration/lineup",
-    "registration/interval"
-  ],
+  "required": [],
   "additionalProperties": false
 }

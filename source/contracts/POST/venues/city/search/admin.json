@@ -40,11 +40,6 @@
       "uniqueItems": true
     }
   },
-  "required": [
-    "city",
-    "venue",
-    "venue/status",
-    "venue/audience"
-  ],
+  "required": [],
   "additionalProperties": false
 }

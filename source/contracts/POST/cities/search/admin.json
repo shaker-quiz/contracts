@@ -10,8 +10,6 @@
       "uniqueItems": true
     }
   },
-  "required": [
-    "city"
-  ],
+  "required": [],
   "additionalProperties": false
 }

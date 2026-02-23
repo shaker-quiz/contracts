@@ -22,9 +22,6 @@
       "uniqueItems": true
     }
   },
-  "required": [
-    "theme",
-    "theme/status"
-  ],
+  "required": [],
   "additionalProperties": false
 }

@@ -26,10 +26,6 @@
       "uniqueItems": true
     }
   },
-  "required": [
-    "user",
-    "role",
-    "city"
-  ],
+  "required": [],
   "additionalProperties": false
 }

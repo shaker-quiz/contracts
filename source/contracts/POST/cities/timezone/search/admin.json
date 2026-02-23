@@ -17,9 +17,6 @@
       "uniqueItems": true
     }
   },
-  "required": [
-    "city",
-    "timezone"
-  ],
+  "required": [],
   "additionalProperties": false
 }

@@ -28,9 +28,6 @@
       "uniqueItems": true
     }
   },
-  "required": [
-    "game",
-    "game/status"
-  ],
+  "required": [],
   "additionalProperties": false
 }

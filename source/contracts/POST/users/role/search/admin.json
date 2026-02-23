@@ -19,9 +19,6 @@
       "uniqueItems": true
     }
   },
-  "required": [
-    "user",
-    "role"
-  ],
+  "required": [],
   "additionalProperties": false
 }

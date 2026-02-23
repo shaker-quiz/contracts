@@ -53,7 +53,7 @@
       "type": "boolean"
     },
     "celebrant": {
-      "type": ["string", "null"]
+      "type": "string"
     },
     "ads_from": {
       "type": "string"

@@ -104,6 +104,9 @@ import POST_registrations_confirmation_search_organizer from './contracts/POST/r
 import POST_registrations_confirmation_search_Unknown from './contracts/POST/registrations/confirmation/search/Unknown.json' with { type: 'json' }
 import POST_registrations_confirmation_search_Service from './contracts/POST/registrations/confirmation/search/Service.json' with { type: 'json' }
 import POST_registrations_confirmation_search_admin from './contracts/POST/registrations/confirmation/search/admin.json' with { type: 'json' }
+import POST_registrations_reservation_search_organizer from './contracts/POST/registrations/reservation/search/organizer.json' with { type: 'json' }
+import POST_registrations_reservation_search_Service from './contracts/POST/registrations/reservation/search/Service.json' with { type: 'json' }
+import POST_registrations_reservation_search_admin from './contracts/POST/registrations/reservation/search/admin.json' with { type: 'json' }
 import POST_registrations_theme_search_organizer from './contracts/POST/registrations/theme/search/organizer.json' with { type: 'json' }
 import POST_registrations_theme_search_Unknown from './contracts/POST/registrations/theme/search/Unknown.json' with { type: 'json' }
 import POST_registrations_theme_search_Service from './contracts/POST/registrations/theme/search/Service.json' with { type: 'json' }
@@ -117,6 +120,9 @@ import POST_registrations_cover_search_organizer from './contracts/POST/registra
 import POST_registrations_cover_search_Unknown from './contracts/POST/registrations/cover/search/Unknown.json' with { type: 'json' }
 import POST_registrations_cover_search_Service from './contracts/POST/registrations/cover/search/Service.json' with { type: 'json' }
 import POST_registrations_cover_search_admin from './contracts/POST/registrations/cover/search/admin.json' with { type: 'json' }
+import POST_registrations_promotion_search_organizer from './contracts/POST/registrations/promotion/search/organizer.json' with { type: 'json' }
+import POST_registrations_promotion_search_Service from './contracts/POST/registrations/promotion/search/Service.json' with { type: 'json' }
+import POST_registrations_promotion_search_admin from './contracts/POST/registrations/promotion/search/admin.json' with { type: 'json' }
 import POST_registrations_search_organizer from './contracts/POST/registrations/search/organizer.json' with { type: 'json' }
 import POST_registrations_search_Unknown from './contracts/POST/registrations/search/Unknown.json' with { type: 'json' }
 import POST_registrations_search_admin from './contracts/POST/registrations/search/admin.json' with { type: 'json' }
@@ -251,6 +257,9 @@ export const Contracts = Object.freeze(
     'POST/registrations/confirmation/search/Unknown',
     'POST/registrations/confirmation/search/Service',
     'POST/registrations/confirmation/search/admin',
+    'POST/registrations/reservation/search/organizer',
+    'POST/registrations/reservation/search/Service',
+    'POST/registrations/reservation/search/admin',
     'POST/registrations/theme/search/organizer',
     'POST/registrations/theme/search/Unknown',
     'POST/registrations/theme/search/Service',
@@ -264,6 +273,9 @@ export const Contracts = Object.freeze(
     'POST/registrations/cover/search/Unknown',
     'POST/registrations/cover/search/Service',
     'POST/registrations/cover/search/admin',
+    'POST/registrations/promotion/search/organizer',
+    'POST/registrations/promotion/search/Service',
+    'POST/registrations/promotion/search/admin',
     'POST/registrations/search/organizer',
     'POST/registrations/search/Unknown',
     'POST/registrations/search/admin',
@@ -400,6 +412,9 @@ export const Schemas = Object.freeze(
     POST_registrations_confirmation_search_Unknown,
     POST_registrations_confirmation_search_Service,
     POST_registrations_confirmation_search_admin,
+    POST_registrations_reservation_search_organizer,
+    POST_registrations_reservation_search_Service,
+    POST_registrations_reservation_search_admin,
     POST_registrations_theme_search_organizer,
     POST_registrations_theme_search_Unknown,
     POST_registrations_theme_search_Service,
@@ -413,6 +428,9 @@ export const Schemas = Object.freeze(
     POST_registrations_cover_search_Unknown,
     POST_registrations_cover_search_Service,
     POST_registrations_cover_search_admin,
+    POST_registrations_promotion_search_organizer,
+    POST_registrations_promotion_search_Service,
+    POST_registrations_promotion_search_admin,
     POST_registrations_search_organizer,
     POST_registrations_search_Unknown,
     POST_registrations_search_admin,
@@ -549,6 +567,9 @@ export const ContractSchema = Object.freeze(
     'POST/registrations/confirmation/search/Unknown': POST_registrations_confirmation_search_Unknown,
     'POST/registrations/confirmation/search/Service': POST_registrations_confirmation_search_Service,
     'POST/registrations/confirmation/search/admin': POST_registrations_confirmation_search_admin,
+    'POST/registrations/reservation/search/organizer': POST_registrations_reservation_search_organizer,
+    'POST/registrations/reservation/search/Service': POST_registrations_reservation_search_Service,
+    'POST/registrations/reservation/search/admin': POST_registrations_reservation_search_admin,
     'POST/registrations/theme/search/organizer': POST_registrations_theme_search_organizer,
     'POST/registrations/theme/search/Unknown': POST_registrations_theme_search_Unknown,
     'POST/registrations/theme/search/Service': POST_registrations_theme_search_Service,
@@ -562,6 +583,9 @@ export const ContractSchema = Object.freeze(
     'POST/registrations/cover/search/Unknown': POST_registrations_cover_search_Unknown,
     'POST/registrations/cover/search/Service': POST_registrations_cover_search_Service,
     'POST/registrations/cover/search/admin': POST_registrations_cover_search_admin,
+    'POST/registrations/promotion/search/organizer': POST_registrations_promotion_search_organizer,
+    'POST/registrations/promotion/search/Service': POST_registrations_promotion_search_Service,
+    'POST/registrations/promotion/search/admin': POST_registrations_promotion_search_admin,
     'POST/registrations/search/organizer': POST_registrations_search_organizer,
     'POST/registrations/search/Unknown': POST_registrations_search_Unknown,
     'POST/registrations/search/admin': POST_registrations_search_admin,

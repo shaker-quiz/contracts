@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "lineup": {
+        "type": "string",
+        "enum": [
+          "Main",
+          "Reserve"
+        ]
+      }
+    },
+    "required": [
+      "id",
+      "lineup"
+    ],
+    "additionalProperties": false
+  },
+  "minItems": 1
+}

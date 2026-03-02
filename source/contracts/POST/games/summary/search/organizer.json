@@ -14,15 +14,15 @@
       "items": {
         "type": "string",
         "enum": [
-          "APPROVED",
-          "ARCHIVE",
-          "CLOSED",
-          "FINISHED",
-          "FORINVITES",
-          "IS_RESERVE",
-          "MODERATION",
-          "PUBLISHED",
-          "REJECTED"
+          "Approve",
+          "Archive",
+          "Close",
+          "Finish",
+          "Invite",
+          "Reserve",
+          "Moderate",
+          "Publish",
+          "Reject"
         ]
       },
       "uniqueItems": true

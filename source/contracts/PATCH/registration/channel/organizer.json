@@ -5,17 +5,17 @@
     "channel": {
       "type": "string",
       "enum": [
-        "vkontakte",
-        "telegramBot",
-        "email"
+        "Vkontakte",
+        "Telegram",
+        "Email"
       ]
     },
     "confirmed_channel": {
       "type": "string",
       "enum": [
-        "vkontakte",
-        "telegramBot",
-        "email"
+        "Vkontakte",
+        "Telegram",
+        "Email"
       ]
     },
     "email": {
@@ -24,7 +24,7 @@
     "vkontakte": {
       "type": "string"
     },
-    "telegramBot": {
+    "telegram": {
       "type": "string"
     }
   },
@@ -36,7 +36,7 @@
     {
       "if": {
         "properties": {
-          "channel": { "const": "vkontakte" }
+          "channel": { "const": "Vkontakte" }
         }
       },
       "then": {
@@ -46,17 +46,17 @@
     {
       "if": {
         "properties": {
-          "channel": { "const": "telegramBot" }
+          "channel": { "const": "Telegram" }
         }
       },
       "then": {
-        "required": ["telegramBot", "confirmed_channel"]
+        "required": ["telegram", "confirmed_channel"]
       }
     },
     {
       "if": {
         "properties": {
-          "channel": { "const": "email" }
+          "channel": { "const": "Email" }
         }
       },
       "then": {

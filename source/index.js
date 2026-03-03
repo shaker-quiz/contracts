@@ -89,6 +89,8 @@ import POST_city_vk_group_token_Admin from './contracts/POST/city/vk_group_token
 import POST_games_theme_search_Organizer from './contracts/POST/games/theme/search/Organizer.json' with { type: 'json' }
 import POST_games_theme_search_Admin from './contracts/POST/games/theme/search/Admin.json' with { type: 'json' }
 import POST_games_theme_search_Unknown from './contracts/POST/games/theme/search/Unknown.json' with { type: 'json' }
+import POST_games_registrations_search_Organizer from './contracts/POST/games/registrations/search/Organizer.json' with { type: 'json' }
+import POST_games_registrations_search_Admin from './contracts/POST/games/registrations/search/Admin.json' with { type: 'json' }
 import POST_games_city_search_Organizer from './contracts/POST/games/city/search/Organizer.json' with { type: 'json' }
 import POST_games_city_search_Admin from './contracts/POST/games/city/search/Admin.json' with { type: 'json' }
 import POST_games_search_Organizer from './contracts/POST/games/search/Organizer.json' with { type: 'json' }
@@ -253,6 +255,8 @@ export const Contracts = Object.freeze(
     'POST/games/theme/search/Organizer',
     'POST/games/theme/search/Admin',
     'POST/games/theme/search/Unknown',
+    'POST/games/registrations/search/Organizer',
+    'POST/games/registrations/search/Admin',
     'POST/games/city/search/Organizer',
     'POST/games/city/search/Admin',
     'POST/games/search/Organizer',
@@ -419,6 +423,8 @@ export const Schemas = Object.freeze(
     POST_games_theme_search_Organizer,
     POST_games_theme_search_Admin,
     POST_games_theme_search_Unknown,
+    POST_games_registrations_search_Organizer,
+    POST_games_registrations_search_Admin,
     POST_games_city_search_Organizer,
     POST_games_city_search_Admin,
     POST_games_search_Organizer,
@@ -585,6 +591,8 @@ export const ContractSchema = Object.freeze(
     'POST/games/theme/search/Organizer': POST_games_theme_search_Organizer,
     'POST/games/theme/search/Admin': POST_games_theme_search_Admin,
     'POST/games/theme/search/Unknown': POST_games_theme_search_Unknown,
+    'POST/games/registrations/search/Organizer': POST_games_registrations_search_Organizer,
+    'POST/games/registrations/search/Admin': POST_games_registrations_search_Admin,
     'POST/games/city/search/Organizer': POST_games_city_search_Organizer,
     'POST/games/city/search/Admin': POST_games_city_search_Admin,
     'POST/games/search/Organizer': POST_games_search_Organizer,

@@ -3,15 +3,20 @@
   "type": "object",
   "properties": {
     "template": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "default",
+        "verified-registration-any",
+        "verified-registration-cash"
+      ]
     },
-    "text": {
+    "message": {
       "type": "string"
     }
   },
   "required": [
     "template",
-    "text"
+    "message"
   ],
   "additionalProperties": false
 }

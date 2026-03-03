@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "registration": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "game": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "game/status": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Approve",
+          "Archive",
+          "Close",
+          "Finish",
+          "Invite",
+          "Reserve",
+          "Moderate",
+          "Publish",
+          "Reject"
+        ]
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

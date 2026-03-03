@@ -70,6 +70,8 @@ import POST_registrations_venue_search_Service from './contracts/POST/registrati
 import POST_registrations_venue_search_Organizer from './contracts/POST/registrations/venue/search/Organizer.json' with { type: 'json' }
 import POST_registrations_venue_search_Admin from './contracts/POST/registrations/venue/search/Admin.json' with { type: 'json' }
 import POST_registrations_venue_search_Unknown from './contracts/POST/registrations/venue/search/Unknown.json' with { type: 'json' }
+import POST_registrations_mailing_Organizer from './contracts/POST/registrations/mailing/Organizer.json' with { type: 'json' }
+import POST_registrations_mailing_Admin from './contracts/POST/registrations/mailing/Admin.json' with { type: 'json' }
 import POST_registrations_status_search_Service from './contracts/POST/registrations/status/search/Service.json' with { type: 'json' }
 import POST_registrations_status_search_Organizer from './contracts/POST/registrations/status/search/Organizer.json' with { type: 'json' }
 import POST_registrations_status_search_Admin from './contracts/POST/registrations/status/search/Admin.json' with { type: 'json' }
@@ -232,6 +234,8 @@ export const Contracts = Object.freeze(
     'POST/registrations/venue/search/Organizer',
     'POST/registrations/venue/search/Admin',
     'POST/registrations/venue/search/Unknown',
+    'POST/registrations/mailing/Organizer',
+    'POST/registrations/mailing/Admin',
     'POST/registrations/status/search/Service',
     'POST/registrations/status/search/Organizer',
     'POST/registrations/status/search/Admin',
@@ -396,6 +400,8 @@ export const Schemas = Object.freeze(
     POST_registrations_venue_search_Organizer,
     POST_registrations_venue_search_Admin,
     POST_registrations_venue_search_Unknown,
+    POST_registrations_mailing_Organizer,
+    POST_registrations_mailing_Admin,
     POST_registrations_status_search_Service,
     POST_registrations_status_search_Organizer,
     POST_registrations_status_search_Admin,
@@ -560,6 +566,8 @@ export const ContractSchema = Object.freeze(
     'POST/registrations/venue/search/Organizer': POST_registrations_venue_search_Organizer,
     'POST/registrations/venue/search/Admin': POST_registrations_venue_search_Admin,
     'POST/registrations/venue/search/Unknown': POST_registrations_venue_search_Unknown,
+    'POST/registrations/mailing/Organizer': POST_registrations_mailing_Organizer,
+    'POST/registrations/mailing/Admin': POST_registrations_mailing_Admin,
     'POST/registrations/status/search/Service': POST_registrations_status_search_Service,
     'POST/registrations/status/search/Organizer': POST_registrations_status_search_Organizer,
     'POST/registrations/status/search/Admin': POST_registrations_status_search_Admin,

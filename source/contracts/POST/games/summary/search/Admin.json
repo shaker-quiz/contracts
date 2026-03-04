@@ -26,6 +26,13 @@
         ]
       },
       "uniqueItems": true
+    },
+    "registration": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
     }
   },
   "required": [],

@@ -88,7 +88,9 @@ import POST_registrations_lineup_search_Service from './contracts/POST/registrat
 import POST_registrations_lineup_search_Organizer from './contracts/POST/registrations/lineup/search/Organizer.json' with { type: 'json' }
 import POST_registrations_lineup_search_Admin from './contracts/POST/registrations/lineup/search/Admin.json' with { type: 'json' }
 import POST_registrations_lineup_search_Unknown from './contracts/POST/registrations/lineup/search/Unknown.json' with { type: 'json' }
+import POST_city_Organizer from './contracts/POST/city/Organizer.json' with { type: 'json' }
 import POST_city_Admin from './contracts/POST/city/Admin.json' with { type: 'json' }
+import POST_city_vk_group_token_Organizer from './contracts/POST/city/vk_group_token/Organizer.json' with { type: 'json' }
 import POST_city_vk_group_token_Admin from './contracts/POST/city/vk_group_token/Admin.json' with { type: 'json' }
 import POST_games_theme_search_Organizer from './contracts/POST/games/theme/search/Organizer.json' with { type: 'json' }
 import POST_games_theme_search_Admin from './contracts/POST/games/theme/search/Admin.json' with { type: 'json' }
@@ -257,7 +259,9 @@ export const Contracts = Object.freeze(
     'POST/registrations/lineup/search/Organizer',
     'POST/registrations/lineup/search/Admin',
     'POST/registrations/lineup/search/Unknown',
+    'POST/city/Organizer',
     'POST/city/Admin',
+    'POST/city/vk_group_token/Organizer',
     'POST/city/vk_group_token/Admin',
     'POST/games/theme/search/Organizer',
     'POST/games/theme/search/Admin',
@@ -428,7 +432,9 @@ export const Schemas = Object.freeze(
     POST_registrations_lineup_search_Organizer,
     POST_registrations_lineup_search_Admin,
     POST_registrations_lineup_search_Unknown,
+    POST_city_Organizer,
     POST_city_Admin,
+    POST_city_vk_group_token_Organizer,
     POST_city_vk_group_token_Admin,
     POST_games_theme_search_Organizer,
     POST_games_theme_search_Admin,
@@ -599,7 +605,9 @@ export const ContractSchema = Object.freeze(
     'POST/registrations/lineup/search/Organizer': POST_registrations_lineup_search_Organizer,
     'POST/registrations/lineup/search/Admin': POST_registrations_lineup_search_Admin,
     'POST/registrations/lineup/search/Unknown': POST_registrations_lineup_search_Unknown,
+    'POST/city/Organizer': POST_city_Organizer,
     'POST/city/Admin': POST_city_Admin,
+    'POST/city/vk_group_token/Organizer': POST_city_vk_group_token_Organizer,
     'POST/city/vk_group_token/Admin': POST_city_vk_group_token_Admin,
     'POST/games/theme/search/Organizer': POST_games_theme_search_Organizer,
     'POST/games/theme/search/Admin': POST_games_theme_search_Admin,

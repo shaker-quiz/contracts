@@ -1,6 +1,8 @@
 import POST_chatapp_registration_mailing_Organizer from './contracts/POST/chatapp/registration/mailing/Organizer.json' with { type: 'json' }
 import POST_chatapp_registration_mailing_Admin from './contracts/POST/chatapp/registration/mailing/Admin.json' with { type: 'json' }
+import POST_theme_Organizer from './contracts/POST/theme/Organizer.json' with { type: 'json' }
 import POST_theme_Admin from './contracts/POST/theme/Admin.json' with { type: 'json' }
+import POST_theme_cover_Organizer from './contracts/POST/theme/cover/Organizer.json' with { type: 'json' }
 import POST_theme_cover_Admin from './contracts/POST/theme/cover/Admin.json' with { type: 'json' }
 import POST_venues_city_search_Organizer from './contracts/POST/venues/city/search/Organizer.json' with { type: 'json' }
 import POST_venues_city_search_Admin from './contracts/POST/venues/city/search/Admin.json' with { type: 'json' }
@@ -111,13 +113,12 @@ import POST_venue_Admin from './contracts/POST/venue/Admin.json' with { type: 'j
 import POST_registration_Organizer from './contracts/POST/registration/Organizer.json' with { type: 'json' }
 import POST_registration_Admin from './contracts/POST/registration/Admin.json' with { type: 'json' }
 import POST_registration_Unknown from './contracts/POST/registration/Unknown.json' with { type: 'json' }
-import POST_registration_mailing_Organizer from './contracts/POST/registration/mailing/Organizer.json' with { type: 'json' }
-import POST_registration_mailing_Admin from './contracts/POST/registration/mailing/Admin.json' with { type: 'json' }
 import POST_roles_search_Admin from './contracts/POST/roles/search/Admin.json' with { type: 'json' }
 import POST_users_role_search_Admin from './contracts/POST/users/role/search/Admin.json' with { type: 'json' }
 import POST_users_cities_search_Admin from './contracts/POST/users/cities/search/Admin.json' with { type: 'json' }
 import POST_users_search_Admin from './contracts/POST/users/search/Admin.json' with { type: 'json' }
 import POST_users_password_search_Admin from './contracts/POST/users/password/search/Admin.json' with { type: 'json' }
+import PATCH_theme_Organizer from './contracts/PATCH/theme/Organizer.json' with { type: 'json' }
 import PATCH_theme_Admin from './contracts/PATCH/theme/Admin.json' with { type: 'json' }
 import PATCH_venues_Organizer from './contracts/PATCH/venues/Organizer.json' with { type: 'json' }
 import PATCH_venues_Admin from './contracts/PATCH/venues/Admin.json' with { type: 'json' }
@@ -153,11 +154,8 @@ import PATCH_registration_Service from './contracts/PATCH/registration/Service.j
 import PATCH_registration_Organizer from './contracts/PATCH/registration/Organizer.json' with { type: 'json' }
 import PATCH_registration_Admin from './contracts/PATCH/registration/Admin.json' with { type: 'json' }
 import PATCH_registration_channel_Service from './contracts/PATCH/registration/channel/Service.json' with { type: 'json' }
-import PATCH_registration_channel_Organizer from './contracts/PATCH/registration/channel/Organizer.json' with { type: 'json' }
-import PATCH_registration_channel_Admin from './contracts/PATCH/registration/channel/Admin.json' with { type: 'json' }
 import PATCH_registration_channel_Unknown from './contracts/PATCH/registration/channel/Unknown.json' with { type: 'json' }
 import PATCH_registration_Unknown from './contracts/PATCH/registration/Unknown.json' with { type: 'json' }
-import PATCH_registration_mailing_status_Service from './contracts/PATCH/registration/mailing/status/Service.json' with { type: 'json' }
 import PATCH_registration_status_Service from './contracts/PATCH/registration/status/Service.json' with { type: 'json' }
 import PATCH_registration_status_Organizer from './contracts/PATCH/registration/status/Organizer.json' with { type: 'json' }
 import PATCH_registration_status_Admin from './contracts/PATCH/registration/status/Admin.json' with { type: 'json' }
@@ -171,7 +169,9 @@ export const Contracts = Object.freeze(
   /** @type {const} */ ([
     'POST/chatapp/registration/mailing/Organizer',
     'POST/chatapp/registration/mailing/Admin',
+    'POST/theme/Organizer',
     'POST/theme/Admin',
+    'POST/theme/cover/Organizer',
     'POST/theme/cover/Admin',
     'POST/venues/city/search/Organizer',
     'POST/venues/city/search/Admin',
@@ -282,13 +282,12 @@ export const Contracts = Object.freeze(
     'POST/registration/Organizer',
     'POST/registration/Admin',
     'POST/registration/Unknown',
-    'POST/registration/mailing/Organizer',
-    'POST/registration/mailing/Admin',
     'POST/roles/search/Admin',
     'POST/users/role/search/Admin',
     'POST/users/cities/search/Admin',
     'POST/users/search/Admin',
     'POST/users/password/search/Admin',
+    'PATCH/theme/Organizer',
     'PATCH/theme/Admin',
     'PATCH/venues/Organizer',
     'PATCH/venues/Admin',
@@ -324,11 +323,8 @@ export const Contracts = Object.freeze(
     'PATCH/registration/Organizer',
     'PATCH/registration/Admin',
     'PATCH/registration/channel/Service',
-    'PATCH/registration/channel/Organizer',
-    'PATCH/registration/channel/Admin',
     'PATCH/registration/channel/Unknown',
     'PATCH/registration/Unknown',
-    'PATCH/registration/mailing/status/Service',
     'PATCH/registration/status/Service',
     'PATCH/registration/status/Organizer',
     'PATCH/registration/status/Admin',
@@ -344,7 +340,9 @@ export const Schemas = Object.freeze(
   /** @type {const} */ ([
     POST_chatapp_registration_mailing_Organizer,
     POST_chatapp_registration_mailing_Admin,
+    POST_theme_Organizer,
     POST_theme_Admin,
+    POST_theme_cover_Organizer,
     POST_theme_cover_Admin,
     POST_venues_city_search_Organizer,
     POST_venues_city_search_Admin,
@@ -455,13 +453,12 @@ export const Schemas = Object.freeze(
     POST_registration_Organizer,
     POST_registration_Admin,
     POST_registration_Unknown,
-    POST_registration_mailing_Organizer,
-    POST_registration_mailing_Admin,
     POST_roles_search_Admin,
     POST_users_role_search_Admin,
     POST_users_cities_search_Admin,
     POST_users_search_Admin,
     POST_users_password_search_Admin,
+    PATCH_theme_Organizer,
     PATCH_theme_Admin,
     PATCH_venues_Organizer,
     PATCH_venues_Admin,
@@ -497,11 +494,8 @@ export const Schemas = Object.freeze(
     PATCH_registration_Organizer,
     PATCH_registration_Admin,
     PATCH_registration_channel_Service,
-    PATCH_registration_channel_Organizer,
-    PATCH_registration_channel_Admin,
     PATCH_registration_channel_Unknown,
     PATCH_registration_Unknown,
-    PATCH_registration_mailing_status_Service,
     PATCH_registration_status_Service,
     PATCH_registration_status_Organizer,
     PATCH_registration_status_Admin,
@@ -517,7 +511,9 @@ export const ContractSchema = Object.freeze(
   /** @type {const} */ ({
     'POST/chatapp/registration/mailing/Organizer': POST_chatapp_registration_mailing_Organizer,
     'POST/chatapp/registration/mailing/Admin': POST_chatapp_registration_mailing_Admin,
+    'POST/theme/Organizer': POST_theme_Organizer,
     'POST/theme/Admin': POST_theme_Admin,
+    'POST/theme/cover/Organizer': POST_theme_cover_Organizer,
     'POST/theme/cover/Admin': POST_theme_cover_Admin,
     'POST/venues/city/search/Organizer': POST_venues_city_search_Organizer,
     'POST/venues/city/search/Admin': POST_venues_city_search_Admin,
@@ -628,13 +624,12 @@ export const ContractSchema = Object.freeze(
     'POST/registration/Organizer': POST_registration_Organizer,
     'POST/registration/Admin': POST_registration_Admin,
     'POST/registration/Unknown': POST_registration_Unknown,
-    'POST/registration/mailing/Organizer': POST_registration_mailing_Organizer,
-    'POST/registration/mailing/Admin': POST_registration_mailing_Admin,
     'POST/roles/search/Admin': POST_roles_search_Admin,
     'POST/users/role/search/Admin': POST_users_role_search_Admin,
     'POST/users/cities/search/Admin': POST_users_cities_search_Admin,
     'POST/users/search/Admin': POST_users_search_Admin,
     'POST/users/password/search/Admin': POST_users_password_search_Admin,
+    'PATCH/theme/Organizer': PATCH_theme_Organizer,
     'PATCH/theme/Admin': PATCH_theme_Admin,
     'PATCH/venues/Organizer': PATCH_venues_Organizer,
     'PATCH/venues/Admin': PATCH_venues_Admin,
@@ -670,11 +665,8 @@ export const ContractSchema = Object.freeze(
     'PATCH/registration/Organizer': PATCH_registration_Organizer,
     'PATCH/registration/Admin': PATCH_registration_Admin,
     'PATCH/registration/channel/Service': PATCH_registration_channel_Service,
-    'PATCH/registration/channel/Organizer': PATCH_registration_channel_Organizer,
-    'PATCH/registration/channel/Admin': PATCH_registration_channel_Admin,
     'PATCH/registration/channel/Unknown': PATCH_registration_channel_Unknown,
     'PATCH/registration/Unknown': PATCH_registration_Unknown,
-    'PATCH/registration/mailing/status/Service': PATCH_registration_mailing_status_Service,
     'PATCH/registration/status/Service': PATCH_registration_status_Service,
     'PATCH/registration/status/Organizer': PATCH_registration_status_Organizer,
     'PATCH/registration/status/Admin': PATCH_registration_status_Admin,

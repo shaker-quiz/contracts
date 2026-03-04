@@ -20,12 +20,20 @@
       },
       "message": {
         "type": "string"
+      },
+      "payment": {
+        "type": "string",
+        "enum": [
+          "Any",
+          "Cash"
+        ]
       }
     },
     "required": [
       "id",
       "feature",
-      "message"
+      "message",
+      "payment"
     ],
     "additionalProperties": false
   },

@@ -14,11 +14,19 @@
     },
     "message": {
       "type": "string"
+    },
+    "payment": {
+      "type": "string",
+      "enum": [
+        "Any",
+        "Cash"
+      ]
     }
   },
   "required": [
     "feature",
-    "message"
+    "message",
+    "payment"
   ],
   "additionalProperties": false
 }

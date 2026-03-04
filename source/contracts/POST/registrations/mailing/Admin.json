@@ -8,12 +8,14 @@
         "type": "string",
         "format": "uuid"
       },
-      "template": {
+      "feature": {
         "type": "string",
         "enum": [
-          "default",
-          "verified-registration-any",
-          "verified-registration-cash"
+          "TEXT",
+          "CREATED_REGISTRATION",
+          "CHANGED_REGISTRATION_STATUS",
+          "CHANGED_REGISTRATION_LINEUP",
+          "VERIFIED_REGISTRATION_CHANNEL"
         ]
       },
       "message": {
@@ -22,7 +24,7 @@
     },
     "required": [
       "id",
-      "template",
+      "feature",
       "message"
     ],
     "additionalProperties": false

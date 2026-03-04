@@ -2,12 +2,14 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "template": {
+    "feature": {
       "type": "string",
       "enum": [
-        "default",
-        "verified-registration-any",
-        "verified-registration-cash"
+        "TEXT",
+        "CREATED_REGISTRATION",
+        "CHANGED_REGISTRATION_STATUS",
+        "CHANGED_REGISTRATION_LINEUP",
+        "VERIFIED_REGISTRATION_CHANNEL"
       ]
     },
     "message": {
@@ -15,7 +17,7 @@
     }
   },
   "required": [
-    "template",
+    "feature",
     "message"
   ],
   "additionalProperties": false

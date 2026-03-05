@@ -129,6 +129,8 @@ import PATCH_user_password_Admin from './contracts/PATCH/user/password/Admin.jso
 import PATCH_game_Service from './contracts/PATCH/game/Service.json' with { type: 'json' }
 import PATCH_game_Organizer from './contracts/PATCH/game/Organizer.json' with { type: 'json' }
 import PATCH_game_Admin from './contracts/PATCH/game/Admin.json' with { type: 'json' }
+import PATCH_game_registration_Organizer from './contracts/PATCH/game/registration/Organizer.json' with { type: 'json' }
+import PATCH_game_registration_Admin from './contracts/PATCH/game/registration/Admin.json' with { type: 'json' }
 import PATCH_registrations_Service from './contracts/PATCH/registrations/Service.json' with { type: 'json' }
 import PATCH_registrations_status_Service from './contracts/PATCH/registrations/status/Service.json' with { type: 'json' }
 import PATCH_registrations_status_Organizer from './contracts/PATCH/registrations/status/Organizer.json' with { type: 'json' }
@@ -298,6 +300,8 @@ export const Contracts = Object.freeze(
     'PATCH/game/Service',
     'PATCH/game/Organizer',
     'PATCH/game/Admin',
+    'PATCH/game/registration/Organizer',
+    'PATCH/game/registration/Admin',
     'PATCH/registrations/Service',
     'PATCH/registrations/status/Service',
     'PATCH/registrations/status/Organizer',
@@ -469,6 +473,8 @@ export const Schemas = Object.freeze(
     PATCH_game_Service,
     PATCH_game_Organizer,
     PATCH_game_Admin,
+    PATCH_game_registration_Organizer,
+    PATCH_game_registration_Admin,
     PATCH_registrations_Service,
     PATCH_registrations_status_Service,
     PATCH_registrations_status_Organizer,
@@ -640,6 +646,8 @@ export const ContractSchema = Object.freeze(
     'PATCH/game/Service': PATCH_game_Service,
     'PATCH/game/Organizer': PATCH_game_Organizer,
     'PATCH/game/Admin': PATCH_game_Admin,
+    'PATCH/game/registration/Organizer': PATCH_game_registration_Organizer,
+    'PATCH/game/registration/Admin': PATCH_game_registration_Admin,
     'PATCH/registrations/Service': PATCH_registrations_Service,
     'PATCH/registrations/status/Service': PATCH_registrations_status_Service,
     'PATCH/registrations/status/Organizer': PATCH_registrations_status_Organizer,

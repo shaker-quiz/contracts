@@ -88,11 +88,7 @@
     "human_name",
     "team_name",
     "people_count",
-    "channel",
-    "is_alone",
-    "is_birthday",
-    "is_extensible",
-    "is_first"
+    "channel"
   ],
   "additionalProperties": false,
   "allOf": [

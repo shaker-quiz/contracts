@@ -45,10 +45,7 @@
     "human_name",
     "team_name",
     "people_count",
-    "is_alone",
-    "is_birthday",
-    "is_extensible",
-    "is_first"
+    "email"
   ],
   "additionalProperties": false
 }

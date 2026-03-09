@@ -27,8 +27,6 @@
       "type": "string"
     }
   },
-  "required": [
-    "people_count"
-  ],
+  "required": [],
   "additionalProperties": false
 }

@@ -34,8 +34,6 @@
       "type": "boolean"
     }
   },
-  "required": [
-    "people_count"
-  ],
+  "required": [],
   "additionalProperties": false
 }

@@ -9,6 +9,8 @@
       "type": "string"
     }
   },
-  "required": [],
+  "required": [
+    "people_count"
+  ],
   "additionalProperties": false
 }

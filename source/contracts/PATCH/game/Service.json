@@ -2,14 +2,6 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "venue_id": {
-      "type": "string",
-      "format": "uuid"
-    },
-    "theme_id": {
-      "type": "string",
-      "format": "uuid"
-    },
     "number": {
       "type": "string"
     },

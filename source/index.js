@@ -127,8 +127,12 @@ import PATCH_user_role_Admin from './contracts/PATCH/user/role/Admin.json' with 
 import PATCH_user_Admin from './contracts/PATCH/user/Admin.json' with { type: 'json' }
 import PATCH_user_password_Admin from './contracts/PATCH/user/password/Admin.json' with { type: 'json' }
 import PATCH_game_Service from './contracts/PATCH/game/Service.json' with { type: 'json' }
+import PATCH_game_theme_Organizer from './contracts/PATCH/game/theme/Organizer.json' with { type: 'json' }
+import PATCH_game_theme_Admin from './contracts/PATCH/game/theme/Admin.json' with { type: 'json' }
 import PATCH_game_Organizer from './contracts/PATCH/game/Organizer.json' with { type: 'json' }
 import PATCH_game_Admin from './contracts/PATCH/game/Admin.json' with { type: 'json' }
+import PATCH_game_venue_Organizer from './contracts/PATCH/game/venue/Organizer.json' with { type: 'json' }
+import PATCH_game_venue_Admin from './contracts/PATCH/game/venue/Admin.json' with { type: 'json' }
 import PATCH_game_registration_Organizer from './contracts/PATCH/game/registration/Organizer.json' with { type: 'json' }
 import PATCH_game_registration_Admin from './contracts/PATCH/game/registration/Admin.json' with { type: 'json' }
 import PATCH_registrations_Service from './contracts/PATCH/registrations/Service.json' with { type: 'json' }
@@ -298,8 +302,12 @@ export const Contracts = Object.freeze(
     'PATCH/user/Admin',
     'PATCH/user/password/Admin',
     'PATCH/game/Service',
+    'PATCH/game/theme/Organizer',
+    'PATCH/game/theme/Admin',
     'PATCH/game/Organizer',
     'PATCH/game/Admin',
+    'PATCH/game/venue/Organizer',
+    'PATCH/game/venue/Admin',
     'PATCH/game/registration/Organizer',
     'PATCH/game/registration/Admin',
     'PATCH/registrations/Service',
@@ -471,8 +479,12 @@ export const Schemas = Object.freeze(
     PATCH_user_Admin,
     PATCH_user_password_Admin,
     PATCH_game_Service,
+    PATCH_game_theme_Organizer,
+    PATCH_game_theme_Admin,
     PATCH_game_Organizer,
     PATCH_game_Admin,
+    PATCH_game_venue_Organizer,
+    PATCH_game_venue_Admin,
     PATCH_game_registration_Organizer,
     PATCH_game_registration_Admin,
     PATCH_registrations_Service,
@@ -644,8 +656,12 @@ export const ContractSchema = Object.freeze(
     'PATCH/user/Admin': PATCH_user_Admin,
     'PATCH/user/password/Admin': PATCH_user_password_Admin,
     'PATCH/game/Service': PATCH_game_Service,
+    'PATCH/game/theme/Organizer': PATCH_game_theme_Organizer,
+    'PATCH/game/theme/Admin': PATCH_game_theme_Admin,
     'PATCH/game/Organizer': PATCH_game_Organizer,
     'PATCH/game/Admin': PATCH_game_Admin,
+    'PATCH/game/venue/Organizer': PATCH_game_venue_Organizer,
+    'PATCH/game/venue/Admin': PATCH_game_venue_Admin,
     'PATCH/game/registration/Organizer': PATCH_game_registration_Organizer,
     'PATCH/game/registration/Admin': PATCH_game_registration_Admin,
     'PATCH/registrations/Service': PATCH_registrations_Service,

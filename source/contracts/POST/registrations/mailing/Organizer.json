@@ -13,6 +13,7 @@
         "enum": [
           "Text",
           "Registration/Created",
+          "Registration/Restored",
           "Registration/Status/Changed",
           "Registration/Lineup/Changed",
           "Registration/Channel/Confirmed",

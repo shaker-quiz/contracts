@@ -11,11 +11,12 @@
       "feature": {
         "type": "string",
         "enum": [
-          "TEXT",
-          "CREATED_REGISTRATION",
-          "CHANGED_REGISTRATION_STATUS",
-          "CHANGED_REGISTRATION_LINEUP",
-          "VERIFIED_REGISTRATION_CHANNEL"
+          "Text",
+          "Registration/Created",
+          "Registration/Status/Changed",
+          "Registration/Lineup/Changed",
+          "Registration/Channel/Confirmed",
+          "Registration/Confirmation"
         ]
       },
       "message": {

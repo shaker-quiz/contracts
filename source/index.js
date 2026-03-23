@@ -38,8 +38,6 @@ import POST_user_city_Admin from './contracts/POST/user/city/Admin.json' with { 
 import POST_user_password_Admin from './contracts/POST/user/password/Admin.json' with { type: 'json' }
 import POST_game_Organizer from './contracts/POST/game/Organizer.json' with { type: 'json' }
 import POST_game_Admin from './contracts/POST/game/Admin.json' with { type: 'json' }
-import POST_game_registrations_search_Organizer from './contracts/POST/game/registrations/search/Organizer.json' with { type: 'json' }
-import POST_game_registrations_search_Admin from './contracts/POST/game/registrations/search/Admin.json' with { type: 'json' }
 import POST_registrations_promotion_search_Service from './contracts/POST/registrations/promotion/search/Service.json' with { type: 'json' }
 import POST_registrations_promotion_search_Organizer from './contracts/POST/registrations/promotion/search/Organizer.json' with { type: 'json' }
 import POST_registrations_promotion_search_Admin from './contracts/POST/registrations/promotion/search/Admin.json' with { type: 'json' }
@@ -137,8 +135,6 @@ import PATCH_game_Organizer from './contracts/PATCH/game/Organizer.json' with { 
 import PATCH_game_Admin from './contracts/PATCH/game/Admin.json' with { type: 'json' }
 import PATCH_game_venue_Organizer from './contracts/PATCH/game/venue/Organizer.json' with { type: 'json' }
 import PATCH_game_venue_Admin from './contracts/PATCH/game/venue/Admin.json' with { type: 'json' }
-import PATCH_game_registration_Organizer from './contracts/PATCH/game/registration/Organizer.json' with { type: 'json' }
-import PATCH_game_registration_Admin from './contracts/PATCH/game/registration/Admin.json' with { type: 'json' }
 import PATCH_registrations_Service from './contracts/PATCH/registrations/Service.json' with { type: 'json' }
 import PATCH_registrations_Organizer from './contracts/PATCH/registrations/Organizer.json' with { type: 'json' }
 import PATCH_registrations_Admin from './contracts/PATCH/registrations/Admin.json' with { type: 'json' }
@@ -219,8 +215,6 @@ export const Contracts = Object.freeze(
     'POST/user/password/Admin',
     'POST/game/Organizer',
     'POST/game/Admin',
-    'POST/game/registrations/search/Organizer',
-    'POST/game/registrations/search/Admin',
     'POST/registrations/promotion/search/Service',
     'POST/registrations/promotion/search/Organizer',
     'POST/registrations/promotion/search/Admin',
@@ -318,8 +312,6 @@ export const Contracts = Object.freeze(
     'PATCH/game/Admin',
     'PATCH/game/venue/Organizer',
     'PATCH/game/venue/Admin',
-    'PATCH/game/registration/Organizer',
-    'PATCH/game/registration/Admin',
     'PATCH/registrations/Service',
     'PATCH/registrations/Organizer',
     'PATCH/registrations/Admin',
@@ -402,8 +394,6 @@ export const Schemas = Object.freeze(
     POST_user_password_Admin,
     POST_game_Organizer,
     POST_game_Admin,
-    POST_game_registrations_search_Organizer,
-    POST_game_registrations_search_Admin,
     POST_registrations_promotion_search_Service,
     POST_registrations_promotion_search_Organizer,
     POST_registrations_promotion_search_Admin,
@@ -501,8 +491,6 @@ export const Schemas = Object.freeze(
     PATCH_game_Admin,
     PATCH_game_venue_Organizer,
     PATCH_game_venue_Admin,
-    PATCH_game_registration_Organizer,
-    PATCH_game_registration_Admin,
     PATCH_registrations_Service,
     PATCH_registrations_Organizer,
     PATCH_registrations_Admin,
@@ -585,8 +573,6 @@ export const ContractSchema = Object.freeze(
     'POST/user/password/Admin': POST_user_password_Admin,
     'POST/game/Organizer': POST_game_Organizer,
     'POST/game/Admin': POST_game_Admin,
-    'POST/game/registrations/search/Organizer': POST_game_registrations_search_Organizer,
-    'POST/game/registrations/search/Admin': POST_game_registrations_search_Admin,
     'POST/registrations/promotion/search/Service': POST_registrations_promotion_search_Service,
     'POST/registrations/promotion/search/Organizer': POST_registrations_promotion_search_Organizer,
     'POST/registrations/promotion/search/Admin': POST_registrations_promotion_search_Admin,
@@ -684,8 +670,6 @@ export const ContractSchema = Object.freeze(
     'PATCH/game/Admin': PATCH_game_Admin,
     'PATCH/game/venue/Organizer': PATCH_game_venue_Organizer,
     'PATCH/game/venue/Admin': PATCH_game_venue_Admin,
-    'PATCH/game/registration/Organizer': PATCH_game_registration_Organizer,
-    'PATCH/game/registration/Admin': PATCH_game_registration_Admin,
     'PATCH/registrations/Service': PATCH_registrations_Service,
     'PATCH/registrations/Organizer': PATCH_registrations_Organizer,
     'PATCH/registrations/Admin': PATCH_registrations_Admin,

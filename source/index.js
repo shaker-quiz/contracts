@@ -139,6 +139,8 @@ import PATCH_game_venue_Organizer from './contracts/PATCH/game/venue/Organizer.j
 import PATCH_game_venue_Admin from './contracts/PATCH/game/venue/Admin.json' with { type: 'json' }
 import PATCH_game_registration_Organizer from './contracts/PATCH/game/registration/Organizer.json' with { type: 'json' }
 import PATCH_game_registration_Admin from './contracts/PATCH/game/registration/Admin.json' with { type: 'json' }
+import PATCH_registrations_Organizer from './contracts/PATCH/registrations/Organizer.json' with { type: 'json' }
+import PATCH_registrations_Admin from './contracts/PATCH/registrations/Admin.json' with { type: 'json' }
 import PATCH_registrations_Service from './contracts/PATCH/registrations/Service.json' with { type: 'json' }
 import PATCH_registrations_status_Service from './contracts/PATCH/registrations/status/Service.json' with { type: 'json' }
 import PATCH_registrations_status_Organizer from './contracts/PATCH/registrations/status/Organizer.json' with { type: 'json' }
@@ -499,6 +501,8 @@ export const Schemas = Object.freeze(
     PATCH_game_venue_Admin,
     PATCH_game_registration_Organizer,
     PATCH_game_registration_Admin,
+    PATCH_registrations_Organizer,
+    PATCH_registrations_Admin,
     PATCH_registrations_Service,
     PATCH_registrations_status_Service,
     PATCH_registrations_status_Organizer,
@@ -680,6 +684,8 @@ export const ContractSchema = Object.freeze(
     'PATCH/game/venue/Admin': PATCH_game_venue_Admin,
     'PATCH/game/registration/Organizer': PATCH_game_registration_Organizer,
     'PATCH/game/registration/Admin': PATCH_game_registration_Admin,
+    'PATCH/registrations/Organizer': PATCH_registrations_Organizer,
+    'PATCH/registrations/Admin': PATCH_registrations_Admin,
     'PATCH/registrations/Service': PATCH_registrations_Service,
     'PATCH/registrations/status/Service': PATCH_registrations_status_Service,
     'PATCH/registrations/status/Organizer': PATCH_registrations_status_Organizer,

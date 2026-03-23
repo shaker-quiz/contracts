@@ -55,6 +55,17 @@
         ]
       },
       "uniqueItems": true
+    },
+    "registration/visibility": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Visible",
+          "Hidden"
+        ]
+      },
+      "uniqueItems": true
     }
   },
   "required": [],

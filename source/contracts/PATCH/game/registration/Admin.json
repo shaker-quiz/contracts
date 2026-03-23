@@ -13,6 +13,13 @@
     },
     "note": {
       "type": "string"
+    },
+    "visibility": {
+      "type": "string",
+      "enum": [
+        "Visible",
+        "Hidden"
+      ]
     }
   },
   "required": [],

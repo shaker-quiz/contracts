@@ -8,18 +8,20 @@
         "type": "string",
         "format": "uuid"
       },
-      "status": {
+      "procedure": {
         "type": "string",
         "enum": [
-          "Created",
-          "Confirmed",
-          "Cancelled"
+          "Assignment",
+          "Confirmation",
+          "Cancellation",
+          "Restoration",
+          "Reinstatement"
         ]
       }
     },
     "required": [
       "id",
-      "status"
+      "procedure"
     ],
     "additionalProperties": false
   },

@@ -66,6 +66,22 @@
         ]
       },
       "uniqueItems": true
+    },
+    "registration/confirmation": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Expired",
+          "Hidden",
+          "Rejected",
+          "Prohibited",
+          "Fulfilled",
+          "Active",
+          "Scheduled"
+        ]
+      },
+      "uniqueItems": true
     }
   },
   "required": [],

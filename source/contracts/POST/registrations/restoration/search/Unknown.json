@@ -66,6 +66,20 @@
         ]
       },
       "uniqueItems": true
+    },
+    "registration/restoration": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Expired",
+          "Hidden",
+          "Fulfilled",
+          "Rejected",
+          "Active"
+        ]
+      },
+      "uniqueItems": true
     }
   },
   "required": [],

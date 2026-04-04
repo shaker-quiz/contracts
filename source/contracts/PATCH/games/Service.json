@@ -21,6 +21,13 @@
           "Publish",
           "Reject"
         ]
+      },
+      "visibility": {
+        "type": "string",
+        "enum": [
+          "Visible",
+          "Hidden"
+        ]
       }
     },
     "required": [

@@ -26,6 +26,17 @@
         ]
       },
       "uniqueItems": true
+    },
+    "game/visibility": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Visible",
+          "Hidden"
+        ]
+      },
+      "uniqueItems": true
     }
   },
   "required": [],

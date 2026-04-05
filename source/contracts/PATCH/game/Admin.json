@@ -23,6 +23,7 @@
       "enum": [
         "Approve",
         "Archive",
+        "Cancel",
         "Close",
         "Finish",
         "Invite",

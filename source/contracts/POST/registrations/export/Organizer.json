@@ -1,0 +1,122 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "game": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "registration": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "column": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "id",
+          "human_name",
+          "email",
+          "phone",
+          "team_name",
+          "people_count",
+          "is_first",
+          "is_birthday",
+          "is_extensible",
+          "is_alone",
+          "ads_from",
+          "comment",
+          "promocode",
+          "channel",
+          "vkontakte",
+          "telegram",
+          "chatapp_id",
+          "utm_term",
+          "utm_source",
+          "utm_medium",
+          "utm_content",
+          "utm_campaign",
+          "confirmed_channel",
+          "status",
+          "lineup",
+          "mailing",
+          "celebrant",
+          "note",
+          "visibility",
+          "time_created",
+          "time_updated"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "registration/status": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Created",
+          "Confirmed",
+          "Cancelled"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "registration/lineup": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Main",
+          "Reserve"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "registration/interval": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "1 day",
+          "3 days",
+          "1 week",
+          "1 month",
+          "3 months",
+          "6 months",
+          "1 year",
+          "all time"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "registration/range": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "registration/visibility": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Visible",
+          "Hidden"
+        ]
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

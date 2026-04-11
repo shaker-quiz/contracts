@@ -56,6 +56,8 @@ import POST_registrations_restoration_search_Service from './contracts/POST/regi
 import POST_registrations_search_Unknown from './contracts/POST/registrations/search/Unknown.json' with { type: 'json' }
 import POST_registrations_search_Admin from './contracts/POST/registrations/search/Admin.json' with { type: 'json' }
 import POST_registrations_search_Organizer from './contracts/POST/registrations/search/Organizer.json' with { type: 'json' }
+import POST_registrations_export_Admin from './contracts/POST/registrations/export/Admin.json' with { type: 'json' }
+import POST_registrations_export_Organizer from './contracts/POST/registrations/export/Organizer.json' with { type: 'json' }
 import POST_game_Admin from './contracts/POST/game/Admin.json' with { type: 'json' }
 import POST_game_Organizer from './contracts/POST/game/Organizer.json' with { type: 'json' }
 import POST_registration_Unknown from './contracts/POST/registration/Unknown.json' with { type: 'json' }
@@ -237,6 +239,8 @@ export const Contracts = Object.freeze(
     'POST/registrations/search/Unknown',
     'POST/registrations/search/Admin',
     'POST/registrations/search/Organizer',
+    'POST/registrations/export/Admin',
+    'POST/registrations/export/Organizer',
     'POST/game/Admin',
     'POST/game/Organizer',
     'POST/registration/Unknown',
@@ -420,6 +424,8 @@ export const Schemas = Object.freeze(
     POST_registrations_search_Unknown,
     POST_registrations_search_Admin,
     POST_registrations_search_Organizer,
+    POST_registrations_export_Admin,
+    POST_registrations_export_Organizer,
     POST_game_Admin,
     POST_game_Organizer,
     POST_registration_Unknown,
@@ -603,6 +609,8 @@ export const ContractSchema = Object.freeze(
     'POST/registrations/search/Unknown': POST_registrations_search_Unknown,
     'POST/registrations/search/Admin': POST_registrations_search_Admin,
     'POST/registrations/search/Organizer': POST_registrations_search_Organizer,
+    'POST/registrations/export/Admin': POST_registrations_export_Admin,
+    'POST/registrations/export/Organizer': POST_registrations_export_Organizer,
     'POST/game/Admin': POST_game_Admin,
     'POST/game/Organizer': POST_game_Organizer,
     'POST/registration/Unknown': POST_registration_Unknown,

@@ -97,13 +97,19 @@
       "uniqueItems": true
     },
     "registration/range": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "format": "date-time"
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end": {
+          "type": "string",
+          "format": "date-time"
+        }
       },
-      "minItems": 2,
-      "maxItems": 2
+      "required": ["start", "end"],
+      "additionalProperties": false
     },
     "registration/visibility": {
       "type": "array",

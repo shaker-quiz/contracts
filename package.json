@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@shakerquiz/contracts",
-  "version": "0.0.242",
+  "version": "0.0.243",
   "author": "yurkimus <yurkimus@gmail.com>",
   "license": "ISC",
   "repository": {
